@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bc614cc2c9d95428d1071916e044e0, type: 3}
+  m_Name: CPU_Status_List
+  m_EditorClassIdentifier: Assembly-CSharp::CPUSStatusList
+  processorStatuses:
+  - {fileID: 1648889729183347288, guid: 0ee021ccad6e8b7479aadb612ab7d442, type: 3}
+  - {fileID: 1648889729183347288, guid: 93435f068a8357f4e8ec67ee46013f6b, type: 3}
+  - {fileID: 1648889729183347288, guid: 6295e24f38a224444bb0fb7271478bb2, type: 3}

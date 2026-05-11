@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e82e60a437acf4589c1e0a6a25b8e0, type: 3}
+  m_Name: Teach Phrases
+  m_EditorClassIdentifier: Assembly-CSharp::TeachPhrasesTableObject
+  teachPhrases:
+  - type: 2
+    phrases:
+    - Phrases: sudo apt install node
+      Description: "Instala\xE7\xE3o do node"
+      Score: 100
+      speed: 85
+    - Phrases: node index.js
+      Description: "Instala\xE7\xE3o do node"
+      Score: 100
+      speed: 120

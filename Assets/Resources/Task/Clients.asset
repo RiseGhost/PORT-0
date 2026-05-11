@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4aaf009980d33d42b643a366f84a16f, type: 3}
+  m_Name: Clients
+  m_EditorClassIdentifier: Assembly-CSharp::TableObjectClient
+  clients:
+  - icon: {fileID: 0}
+    name: Jhonas
+    description: Precisa de website para promover o negocia da empresa.
+    satisfaction: 3
+    is_organization: 1
+    organization:
+      name: Big Beds
+      country: Bolovia
+      area: Comercial
+      icon: {fileID: 0}
+    min_level_require: 0
+    max_level_require: 65535
+  - icon: {fileID: 0}
+    name: Thomas
+    description: Precisa de um website para promover o trabalho pessoal.
+    satisfaction: 3
+    is_organization: 0
+    organization:
+      name: 
+      country: 
+      area: 
+      icon: {fileID: 0}
+    min_level_require: 0
+    max_level_require: 65535

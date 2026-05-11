@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60143017ab505446a8827ea4ad6fcda, type: 3}
+  m_Name: TaskTable
+  m_EditorClassIdentifier: Assembly-CSharp::TaskTableObject
+  tasks:
+  - Tflops: 0.2
+    Name: LadingPage
+    Difficulty: 0
+    taskDescription:
+      type: 2
+      description: Creat new webpage
+    technologyGroup:
+      group:
+      - technology: 0
+        icon: {fileID: 2800000, guid: 780cb63edfd2ea14a85bd2f7672b1738, type: 3}
+    miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 25
+      StartValue: 250
+      PeriodicValue: 10
+      group: 1
+      type: 0

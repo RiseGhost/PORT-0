@@ -1,0 +1,44 @@
+/* Contêiner principal */
+.mybar {
+    position: relative;
+    overflow: hidden; /* garante que nada vaze */
+    border: none;
+}
+
+.mybar .unity-progress-bar__container{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+}
+
+/* Fundo da barra (ocupa 100%) */
+.mybar .unity-progress-bar__background {
+    position: absolute;
+    width: 110px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-color: rgba(0,0,0,0);
+    border-radius: 0px; /* opcional */
+    
+}
+
+/* Parte preenchida (progresso) ocupando 100% da altura e largura proporcional */
+.mybar .unity-progress-bar__progress {
+    position: absolute;
+    height: 50px;
+    background-color: rgba(242, 161, 47, 1);
+    border-radius: 10px;
+    /* width será controlada pelo Unity via inline style */
+}
+
+/* Ocultar título */
+.mybar .unity-progress-bar__title {
+    display: none;
+    border: none;
+}
+
+
+.cancel .unity-progress-bar__progress {
+    background-color: rgba(240, 90, 90, 1);
+    /* width será controlada pelo Unity via inline style */
+}

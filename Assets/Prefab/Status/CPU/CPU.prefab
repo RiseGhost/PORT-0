@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1131180557985679942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8225985224733668400}
+  - component: {fileID: 1648889729183347288}
+  m_Layer: 0
+  m_Name: CPU
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8225985224733668400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131180557985679942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1648889729183347288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131180557985679942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55cd4ec7d6a7cd341acd3519430f8918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProcessorStatus
+  ID: d258afff-786a-4aa1-a304-533bc561f7a4
+  type: 3
+  value: IBM 1
+  Architect: {fileID: 7562063358051115864, guid: d22e0288c5cadef48902f661dee4d147, type: 3}
+  Mark: {fileID: 4320160992310900593, guid: 8472558d0aecdbd448047fad64bcef85, type: 3}
+  CPUPerformance: {fileID: 7871995264678575893, guid: b1fc93c6b708ac742be176b28223ffb1, type: 3}
+  sockets: 1
+  Price: 80
+  Watts: 110
+  icon: {fileID: 0}
+  exhibitor: {fileID: 4710529151711303628, guid: 4eb0259a33c31c74881754b6b941b257, type: 3}

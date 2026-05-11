@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5199707611504246121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7972324321914620622}
+  - component: {fileID: 5318755888172489130}
+  m_Layer: 0
+  m_Name: MX 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7972324321914620622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199707611504246121}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1029.1328, y: 509.83527, z: 7.97093}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5318755888172489130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199707611504246121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e029916615cd1cb4caa28421f176d149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FanStatus
+  ID: 1a677db2-592a-4548-8726-c9709fdd7559
+  type: 4
+  value:
+    icon: {fileID: 0}
+    noise:
+      audio: {fileID: 0}
+      Volume: 0
+    modelo: RX 6
+    Temperature_Decrement: 35
+    Price: 20
+    Watts: 20
+    exhibitor: {fileID: 4710529151711303628, guid: 6f12b60336475ef4b93f4c3f1839b92f, type: 3}

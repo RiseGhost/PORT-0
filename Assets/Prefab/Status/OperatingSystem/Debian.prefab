@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8199093171923760276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7052293564663984013}
+  - component: {fileID: 6692177058635579535}
+  m_Layer: 0
+  m_Name: Debian
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7052293564663984013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199093171923760276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.77402, y: -0.5, z: 0.44022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6692177058635579535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199093171923760276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9c2e969ab267847a01a45e656c5601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OperatingSystemStatus
+  ID: f07a4929-2b5e-4017-bba3-6a11f04a14b2
+  type: 7
+  value:
+    DesktopLayout: {fileID: 9197481963319205126, guid: bf7ff58535bfa60438a1ac7320271663, type: 3}
+    Name: 2
+    DisplayName: Dubian
+    isPay: 0
+    Description: Internal Stability
+    icon: {fileID: 2800000, guid: 9bee974be94dcdc488e41bc84c677a4f, type: 3}
+    PrimaryColor: {r: 0.9056604, g: 0.32894266, b: 0.32894266, a: 1}
+    SecondaryColor: {r: 1, g: 1, b: 1, a: 1}
+    ThirdColor: {r: 0.36862746, g: 0.15294118, b: 0.3137255, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
