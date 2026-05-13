@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
+using Unity.AppUI.UI;
 using UnityEngine;
 
 public class ServerConfigBook : MonoBehaviour, UIBook
@@ -67,6 +69,16 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         var select_FAN = FansPage.getGrounpFans().getSelect();
         if (select_FAN == null) showCase.RemoveType(ExhibitorType.Fan);
         else showCase.AddExhibitorStart(select_FAN.GetValue().exhibitor);
+    }
+
+    public float getPrice()
+    {
+        float Price = 0f;
+        if (CPUPage.getGroudCpuWidget().getSelect() != null) Price += CPUPage.getGroudCpuWidget().getSelect().getPrice();
+        if (FansPage.getGrounpFans().getSelect() != null) Price += FansPage.getGrounpFans().getSelect().GetValue().Price;
+        if (MotherBoardPage.getMotherBoardWidget().getSelect() != null) Price += MotherBoardPage.getMotherBoardWidget().getSelect().GetValue().Price;
+        if (diskPage.getDisksStatuses() != null) foreach (HardDiscStatus disk in diskPage.getDisksStatuses()) Price += disk.GetValue().Price;
+        return Price;
     }
 
     public void BackOver()

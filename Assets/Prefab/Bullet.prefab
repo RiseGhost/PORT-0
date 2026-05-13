@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c8f89a8cbf6d14cbd54f352844f597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CannonBullet
-  speed: 95
+  speed: 130
   TimeToMove: 0.1
   TTL: 4
 --- !u!96 &8363509379739752729
@@ -201,7 +201,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Time: 0.2
+  m_Time: 0.16
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -219,8 +219,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.8749909
-        value: 0.25962242
+        time: 0.9183869
+        value: 0.051462024
         inSlope: 0
         outSlope: 0
         tangentMode: 0

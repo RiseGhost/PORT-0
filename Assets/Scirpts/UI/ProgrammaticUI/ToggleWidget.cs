@@ -41,5 +41,9 @@ public abstract class ToggleWidget<E> : ProgrammaticWidget<Toggle, E>
     {
         setBackground((isSelect()) ? selectColor : defaultColor);
         setTextColor((isSelect()) ? selectTextColor : defaultTextColor);
+        if (getWidget().group == null && transform.parent.GetComponent<ToggleGroup>() != null)
+        {
+            getWidget().group = transform.parent.GetComponent<ToggleGroup>();
+        }
     }
 }

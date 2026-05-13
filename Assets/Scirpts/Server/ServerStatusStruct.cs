@@ -17,4 +17,12 @@ public class ServerStatusStruct
     public void Install_OS() { OS_Install = true; }
     public void setHostName(string HostName){ this.HostName = HostName; }
     public bool isOperational(){ return cpu != null && fanStatus != null && motherBoardStatus != null && disks != null && OS_Install; }
+    public float getWatts()
+    {
+        float Watts = 0;
+        if (cpu != null) Watts += cpu.getStatus().getWatts();
+        if (fanStatus != null) Watts += fanStatus.GetValue().Watts;
+        if (motherBoardStatus != null) Watts += motherBoardStatus.GetValue().Watts;
+        return Watts;
+    }
 }

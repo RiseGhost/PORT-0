@@ -30,6 +30,7 @@ public class CannonBullet : MonoBehaviour
     public void setCannonMouth(Transform mouth)
     {
         CannonMouth = mouth;
+        transform.rotation = mouth.rotation;
     }
 
     private IEnumerator DestroyAfterTTL()

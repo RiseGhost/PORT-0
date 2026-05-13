@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         if (Keyboard.current[Key.H].wasPressedThisFrame)
         {
             StorageManager.DeletedStorage();
+            PlayerPrefs.DeleteKey("CPUPage_Tutorial");
             MoneyBank.Reset();
             BankAccount.Reset(Application.persistentDataPath);
             new NotificationDefault("Game Save System","All storage entities are deleted.").Show();

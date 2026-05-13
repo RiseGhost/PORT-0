@@ -9,6 +9,7 @@ public class ServerStatusList : MonoBehaviour
     [SerializeField] TextMeshProUGUI TFLOPS_Label,WATTS_Label;
     [SerializeField] Slider TFLOPS_Slider, WATTS_Slider;
     [SerializeField] ServerConfigBook serverConfigBook;
+    [SerializeField] private TextMeshProUGUI PriceText;
     private float currentFLOPS_Value = 0f, currentWatts_Value = 0f;
     private GROUP_CPUS_Widget group_cpus;
     private GROUP_FANS_Widget group_fans;
@@ -47,5 +48,10 @@ public class ServerStatusList : MonoBehaviour
 
         WATTS_Label.text = currentWatts_Value.ToString();
         WATTS_Slider.value = Mathf.Lerp(WATTS_Slider.value, Watts, increFractorWatts);
+
+        if (PriceText != null)
+        {
+            PriceText.text = serverConfigBook.getPrice().ToString("000.00") + "$";
+        }
     }
 }
