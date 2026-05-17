@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -10,7 +11,11 @@ public class MonitorSceneController : MonoBehaviour
     {
         ServerGameObject[] servers = GameObject.FindObjectsByType<ServerGameObject>(FindObjectsSortMode.None);
         if (servers.Length == 0) return;
-        float totalWatts = servers.ToList().Select((watts) => watts.server.serverStatus.getWatts()).Sum();
-        if (LabelWatts != null) LabelWatts.text = totalWatts.ToString();
+        List<ServerStatusStruct> serverStatuses = servers.ToList().Select((server) => server.server.serverStatus).ToList();
+        try
+        {
+            float totalWatts = serverStatuses.Select((watts) => watts.getWatts()).Sum();
+            if (LabelWatts != null) LabelWatts.text = totalWatts.ToString();
+        } catch (System.NullReferenceException){}
     }
 }

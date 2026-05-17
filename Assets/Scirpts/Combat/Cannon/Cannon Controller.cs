@@ -6,6 +6,7 @@ public class CannonController : MonoBehaviour
 {
     [SerializeField] private Key activeKey = Key.X, shotKey = Key.Space;
     [SerializeField] private InputAction action;
+    [SerializeField] private CannonAim aim;
     private PlayerController player;
     private CameraSwitch cameraSwitch;
     private CannonMechanic cannonMechanic;
@@ -20,6 +21,7 @@ public class CannonController : MonoBehaviour
     void Awake()
     {
         cannonMechanic = GetComponent<CannonMechanic>();
+        inCombat = false;
     }
 
     void Start()
@@ -40,8 +42,8 @@ public class CannonController : MonoBehaviour
             else DeactiveCombatMode();
         }
         if (!inCombat) return;
-        horizontal += action.ReadValue<Vector2>().x / 2;
-        vertical += action.ReadValue<Vector2>().y / 2;
+        horizontal += action.ReadValue<Vector2>().x / 4;
+        vertical += action.ReadValue<Vector2>().y / 4;
         vertical = Mathf.Clamp(vertical, -45f, 90f);
         cannonMechanic.setMiddlePartAngle(horizontal);
         cannonMechanic.setBumBumAngle(vertical);
@@ -54,6 +56,7 @@ public class CannonController : MonoBehaviour
         cameraSwitch.Switch_Combat_Camera();
         player.gameObject.SetActive(false);
         inCombat = true;
+        if (aim != null) aim.gameObject.SetActive(true);
     }
 
     public void DeactiveCombatMode()
@@ -61,5 +64,6 @@ public class CannonController : MonoBehaviour
         cameraSwitch.Switch_main_camera();
         player.gameObject.SetActive(true);
         inCombat = false;
+        if (aim != null) aim.gameObject.SetActive(false);
     }
 }

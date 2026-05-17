@@ -10,7 +10,7 @@ public class BankAccount
     
     public BankAccount()
     {
-        amount = 0;
+        amount = 2500;
     }
 
     public static void Reset(string persistentDataPath)

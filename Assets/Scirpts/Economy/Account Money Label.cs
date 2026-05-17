@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class AccountMoneyLabel : MonoBehaviour
 {
+    [SerializeField] private string sufix = " $";
     private TextMeshProUGUI text;
     void Start() {
         text = GetComponent<TextMeshProUGUI>();
@@ -16,7 +17,7 @@ public class AccountMoneyLabel : MonoBehaviour
         while (true)
         {
             yield return new WaitForSecondsRealtime(0.2f);
-            text.text = BankAccount.getCurrent(Application.persistentDataPath).amount.ToString();
+            text.text = BankAccount.getCurrent(Application.persistentDataPath).amount.ToString() + sufix;
         }
     }
 }

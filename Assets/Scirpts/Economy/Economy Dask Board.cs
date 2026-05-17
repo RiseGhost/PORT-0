@@ -7,7 +7,12 @@ public class EconomyDaskBoard : MonoBehaviour
     [SerializeField] private Canvas DaskBoard;
     [SerializeField] private Key key = Key.Q;
     private bool visible = false;
-    
+
+    void OnDisable()
+    {
+        if (DaskBoard != null) DaskBoard.gameObject.SetActive(false);
+    }
+
     void Start()
     {
         if (DaskBoard == null) Destroy(gameObject);
