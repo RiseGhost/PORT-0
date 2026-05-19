@@ -9,4 +9,11 @@
 public enum Technology
 {
     NodeJS,
+    Nginx,
+    Apache,
+    MySQL,
+    PostgreSQL,
+    MongoDB,
+    Postfix,
+    DNS
 }

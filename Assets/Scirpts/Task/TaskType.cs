@@ -4,4 +4,5 @@ public enum TaskType
     IA,
     Website,
     VPS,
+    Email,
 }

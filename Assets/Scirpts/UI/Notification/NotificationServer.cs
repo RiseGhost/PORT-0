@@ -135,7 +135,7 @@ public class NotificationServer : MonoBehaviour
             actives[2] = true;
             AddNotificationUI(NotificationsZone.Right);
         }
-        else { }
+        else {}
     }
     
     private void DestroyNotification(Notification notification)

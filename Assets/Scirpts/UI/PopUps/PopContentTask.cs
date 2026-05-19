@@ -43,14 +43,17 @@ public class PopContentTask : MonoBehaviour
         if (LabelClientDescription != null) LabelClientDescription.text = client.getDescription();
         if (task.GetClient().IsOrganization())
         {
-            PersonalContent.SetActive(false);
-            OrganizationContent.SetActive(true);
+            //Alterar depois
+            PersonalContent.SetActive(true);
+            OrganizationContent.SetActive(false);
 
             Organization organization = client.getOrganization();
             if (LabelOrganizationName != null)      LabelOrganizationName.text =    organization.name;
             if (LabelOrganizationCountry != null)   LabelOrganizationCountry.text = organization.country;
             if (LabelOrganizationArea != null)      LabelOrganizationArea.text =    organization.area;
             if (ClientOrganizationIcon != null)     ClientOrganizationIcon.texture = organization.icon;
+
+            if (ClientPersonalIcon != null)         ClientPersonalIcon.texture = client.getIcon();
         }
         else
         {

@@ -10,16 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28e82e60a437acf4589c1e0a6a25b8e0, type: 3}
-  m_Name: Teach Phrases
+  m_Name: Teach Phrases Website NodeJS
   m_EditorClassIdentifier: Assembly-CSharp::TeachPhrasesTableObject
   teachPhrases:
   - type: 2
     phrases:
-    - Phrases: sudo apt install node
-      Description: "Instala\xE7\xE3o do node"
+    - Phrases: sudo apt install nodejs
+      Description: Installs Node.js runtime
       Score: 100
       speed: 85
+    - Phrases: sudo apt install npm
+      Description: Installs Node package manager
+      Score: 100
+      speed: 120
+    - Phrases: npm install
+      Description: Installs project dependencies
+      Score: 100
+      speed: 120
     - Phrases: node index.js
-      Description: "Instala\xE7\xE3o do node"
+      Description: Runs a Node.js application
       Score: 100
       speed: 120

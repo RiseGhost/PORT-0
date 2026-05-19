@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e82e60a437acf4589c1e0a6a25b8e0, type: 3}
+  m_Name: Teach Phrases Website Apache
+  m_EditorClassIdentifier: Assembly-CSharp::TeachPhrasesTableObject
+  teachPhrases:
+  - type: 2
+    phrases:
+    - Phrases: sudo apt install apache
+      Description: Installs Apache server
+      Score: 100
+      speed: 85
+    - Phrases: sudo systemctl restart apache
+      Description: Restarts Apache service
+      Score: 100
+      speed: 120
+    - Phrases: node index.js
+      Description: Runs a Node.js application
+      Score: 100
+      speed: 120

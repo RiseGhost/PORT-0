@@ -53,6 +53,7 @@ public class CannonController : MonoBehaviour
 
     public void ActiveCombatMode()
     {
+        TaskServer.Lock = true;
         cameraSwitch.Switch_Combat_Camera();
         player.gameObject.SetActive(false);
         inCombat = true;
@@ -61,6 +62,7 @@ public class CannonController : MonoBehaviour
 
     public void DeactiveCombatMode()
     {
+        TaskServer.Lock = false;
         cameraSwitch.Switch_main_camera();
         player.gameObject.SetActive(true);
         inCombat = false;

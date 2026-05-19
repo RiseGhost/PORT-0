@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 4983893333408903331}
   - component: {fileID: 6707648180209832753}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Enterprise Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 7897475566015069091}
   - component: {fileID: 1692074026437558533}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: Enterprise Cliente Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1628,7 +1628,7 @@ GameObject:
   - component: {fileID: 4248211290689414101}
   - component: {fileID: 2692309680650540241}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Pessoal RawImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1651,7 +1651,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4248211290689414101
 CanvasRenderer:
@@ -2229,8 +2229,8 @@ MonoBehaviour:
   LabelOrganizationName: {fileID: 7070679076854698542}
   LabelOrganizationCountry: {fileID: 8715347242148080772}
   LabelOrganizationArea: {fileID: 8988116690933986684}
-  ClientPersonalIcon: {fileID: 0}
-  ClientOrganizationIcon: {fileID: 0}
+  ClientPersonalIcon: {fileID: 2692309680650540241}
+  ClientOrganizationIcon: {fileID: 6707648180209832753}
 --- !u!1 &7184827740535653554
 GameObject:
   m_ObjectHideFlags: 0

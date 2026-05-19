@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e82e60a437acf4589c1e0a6a25b8e0, type: 3}
+  m_Name: Teach Phrases Email Postfix
+  m_EditorClassIdentifier: Assembly-CSharp::TeachPhrasesTableObject
+  teachPhrases:
+  - type: 4
+    phrases:
+    - Phrases: sudo apt install postfix
+      Description: Installs Postfix mail server
+      Score: 100
+      speed: 120
+    - Phrases: sudo systemctl start postfix
+      Description: Starts Postfix service
+      Score: 100
+      speed: 120
+    - Phrases: sudo systemctl restart postfix
+      Description: Restarts Postfix service
+      Score: 100
+      speed: 120
+    - Phrases: sudo systemctl status postfix
+      Description: Checks Postfix status
+      Score: 100
+      speed: 120

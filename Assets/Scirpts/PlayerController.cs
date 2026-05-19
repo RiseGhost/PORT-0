@@ -21,10 +21,16 @@ public class PlayerController : MonoBehaviour
     public InputAction action;
     private bool canJump = false;
     private Rigidbody rigidbody;
+    private Coroutine taskCoroutine;
 
     void OnEnable()
     {
         action.Enable();
+        if (taskCoroutine == null) taskCoroutine = StartCoroutine(teste());
+        else{
+            StopCoroutine(taskCoroutine);
+            taskCoroutine = StartCoroutine(teste());
+        }
     }
 
     void OnDisable()
@@ -37,7 +43,7 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         Application.targetFrameRate = 0;
         QualitySettings.vSyncCount = 0;
-        StartCoroutine(teste());
+        taskCoroutine = StartCoroutine(teste());
     }
 
     private IEnumerator teste()

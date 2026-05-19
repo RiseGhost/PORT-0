@@ -19,3 +19,29 @@ MonoBehaviour:
       group:
       - technology: 0
         icon: {fileID: 2800000, guid: 780cb63edfd2ea14a85bd2f7672b1738, type: 3}
+  - phrases: {fileID: 11400000, guid: 118ca00d5b10ebe4dbbc7e6f9945f707, type: 2}
+    type: 2
+    technologyGroup:
+      group:
+      - technology: 0
+        icon: {fileID: 2800000, guid: 780cb63edfd2ea14a85bd2f7672b1738, type: 3}
+      - technology: 1
+        icon: {fileID: 2800000, guid: f817115b4af28694f97ae9bd014a9507, type: 3}
+  - phrases: {fileID: 11400000, guid: b1dd272b03e02d643b97bbedd5ed12f8, type: 2}
+    type: 2
+    technologyGroup:
+      group:
+      - technology: 2
+        icon: {fileID: 2800000, guid: 2a8715142e2638c44919c057bf9860e6, type: 3}
+  - phrases: {fileID: 11400000, guid: dd3867bdc4aa6374fbee36eac6e69044, type: 2}
+    type: 0
+    technologyGroup:
+      group:
+      - technology: 3
+        icon: {fileID: 2800000, guid: 70db7424a237a774bb1385e172f65d62, type: 3}
+  - phrases: {fileID: 11400000, guid: b5ea3a44eeeef6341927414a11e4b63b, type: 2}
+    type: 4
+    technologyGroup:
+      group:
+      - technology: 6
+        icon: {fileID: 2800000, guid: a90754cdfa1bb7747b03c31f874be7ca, type: 3}
