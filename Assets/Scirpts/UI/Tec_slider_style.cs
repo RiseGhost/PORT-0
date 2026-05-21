@@ -26,4 +26,15 @@ public class Tec_slider_style : MonoBehaviour
             block.color = (blockValue <= slider.value) ? FillColor : EmptyColor;
         }
     }
+
+    public void setMaxValue(float value){
+        maxValue = value;
+        step = maxValue / BlockContainer.transform.childCount;
+        if (slider != null) slider.maxValue = maxValue;
+        else
+        {
+            slider = GetComponent<Slider>();
+            slider.maxValue = maxValue;
+        }
+    }
 }
