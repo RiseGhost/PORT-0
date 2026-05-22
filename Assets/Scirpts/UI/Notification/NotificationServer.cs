@@ -10,6 +10,13 @@ public class NotificationQue
     public List<Notification> top = new List<Notification>();
     public List<Notification> bottom = new List<Notification>();
     public List<Notification> right = new List<Notification>();
+
+    public void ResetAll()
+    {
+        top = new List<Notification>();
+        bottom = new List<Notification>();
+        right = new List<Notification>();
+    }
 }
 
 public class NotificationServer : MonoBehaviour
@@ -77,6 +84,17 @@ public class NotificationServer : MonoBehaviour
     {
         if (Starting) return;
         RemoveNotificationEvent.Invoke(notification);
+    }
+
+    public static void RemoveAll()
+    {
+        for (int i = 0; i < notificationQue.top.Count; i++)
+            RemoveNotification(notificationQue.top[i]);
+        for (int i = 0; i < notificationQue.bottom.Count; i++)
+            RemoveNotification(notificationQue.bottom[i]);
+        for (int i = 0; i < notificationQue.right.Count; i++)
+            RemoveNotification(notificationQue.right[i]);
+        notificationQue.ResetAll();
     }
 
     private VisualElement GetVisualElementZone(NotificationsZone zone)

@@ -39,7 +39,6 @@ public class EcnonomyDashSliders : MonoBehaviour
         if (ProfitLabel != null) ProfitLabel.text = profitValue.ToString();
         if (ExpenseLabel != null) ExpenseLabel.text = (Mathf.Abs(expenseValue)).ToString();
     }
-
     void Awake(){
         if (profit == null || loss == null)
             Destroy(this);
@@ -48,8 +47,10 @@ public class EcnonomyDashSliders : MonoBehaviour
     }
 
     void Update(){
-        if (profitSlider != null) profitSlider.value = profitValue;
-        if (lossSlider != null) lossSlider.value = Mathf.Abs(expenseValue);
+        if (profitSlider != null)
+            profitSlider.value = Mathf.Clamp(profitSlider.value + (max * speed * Time.deltaTime),0,profitValue);
+        if (lossSlider != null)
+            lossSlider.value = Mathf.Clamp(lossSlider.value + (max * speed * Time.deltaTime),0,Mathf.Abs(expenseValue));
         
         if (profitSlider == null || lossSlider == null) return;
 

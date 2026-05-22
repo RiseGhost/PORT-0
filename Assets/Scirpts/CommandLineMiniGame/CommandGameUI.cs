@@ -113,7 +113,10 @@ public class CommandGameUI : MonoBehaviour
         {
             yield return null;
             if (Keyboard.current[Key.Q].wasPressedThisFrame)
+            {
                 WordRushImplement.Close();
+                break;
+            }
             if (Keyboard.current[Key.R].wasPressedThisFrame)
             {
                 commandWord.reset();

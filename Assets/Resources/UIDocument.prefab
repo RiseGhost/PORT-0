@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9061209747044270351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7890092059529911986}
+  - component: {fileID: 4018987352332192186}
+  - component: {fileID: 157900133735847}
+  - component: {fileID: 8673887046674710904}
+  m_Layer: 5
+  m_Name: UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7890092059529911986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061209747044270351}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4018987352332192186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061209747044270351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: a791b080873ae964eaf47c59b6f879a5, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 7bb9bc986fb2f6d4ab64770d563737d3, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &157900133735847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061209747044270351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0aaec76b5eb2e54baff7ea218507520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ui_Text
+  commandWord:
+    IDElementSpawnWords: SpawnWords
+    commands:
+    - Phrases: cd desktop
+      Description: "Navegar at\xE9 a pasta desktop."
+      Score: 100
+      speed: 85
+    - Phrases: sudo apt install node
+      Description: Instalar o maquina virtual para executar Javascript
+      Score: 200
+      speed: 110
+    - Phrases: node index.js
+      Description: Iniciar o servidor usando o NodeJS.
+      Score: 200
+      speed: 135
+    UIWordsTemplate: {fileID: 9197481963319205126, guid: b2f9d41b0ec231440b924b4dbfcfa32e, type: 3}
+    UIHistoryCardTemplate: {fileID: 9197481963319205126, guid: 5053a7418d79fca4197e7ae1a5b94e2a, type: 3}
+    spawnZone:
+      minX: 0
+      maxX: 50
+  osTable: {fileID: 11400000, guid: cc9dd416ce3ecbd49bbaf1424b1430ff, type: 2}
+  operatingSystemName: 0
+  DestroySprites:
+  - {fileID: 2800000, guid: 07887ea2bae08524a878ea158fc2484c, type: 3}
+  - {fileID: 2800000, guid: a8151289e5f8b18439cdda93f7845792, type: 3}
+  - {fileID: 2800000, guid: 04a9a658e8380d14fa099fa530932e00, type: 3}
+  - {fileID: 2800000, guid: 12a786e54e6f3694281e344caa5bc408, type: 3}
+  - {fileID: 2800000, guid: 74c2c4d97837b7649a4a9f9255224a48, type: 3}
+  - {fileID: 2800000, guid: fa062beaab71d1c4db4178119a1cd3b7, type: 3}
+  - {fileID: 2800000, guid: f9bb12cb1f4147a4ab2606eae8c0bb9a, type: 3}
+  - {fileID: 2800000, guid: e1c0edd8ddab1fd49b74fedc7d003cc4, type: 3}
+  - {fileID: 2800000, guid: b2338013a6d7b97448051554d769deea, type: 3}
+  - {fileID: 2800000, guid: b7dbbdd85ec3e2447b121f6294859d24, type: 3}
+  - {fileID: 2800000, guid: 45843edd7d703614e8bfebdb9db138a2, type: 3}
+  - {fileID: 2800000, guid: f37c230f0cdd9534bb54b802cc49be96, type: 3}
+  - {fileID: 2800000, guid: d0abb44262665944c9dd21bc12c6e955, type: 3}
+  - {fileID: 2800000, guid: c68cca858c40cca4d941064e3a642597, type: 3}
+  - {fileID: 2800000, guid: 294563aa5e936044d8fa177c268541ef, type: 3}
+  - {fileID: 2800000, guid: 06d1c9b4060a27746be57a986eb08fce, type: 3}
+  - {fileID: 2800000, guid: 3db834cb9ebc7444e8ad0b9590d72994, type: 3}
+  - {fileID: 2800000, guid: abf7a916ba85adb4fa60553219e90ac1, type: 3}
+  - {fileID: 2800000, guid: 08ce43bbaab65444dbcbfc615f51b995, type: 3}
+  - {fileID: 2800000, guid: 74f41850279cb0d4199f7c423d8cfeb0, type: 3}
+  - {fileID: 2800000, guid: 5f1534e1572618941b31c1babd810ab3, type: 3}
+  - {fileID: 2800000, guid: 6e9cc44cbcf53064ea725272a1b096da, type: 3}
+  - {fileID: 2800000, guid: a871ed931e663e048a8a6765a1e4d262, type: 3}
+  - {fileID: 2800000, guid: 07b4b9925a2f7a04da02db554a4519ca, type: 3}
+  - {fileID: 2800000, guid: e225e13e67ab77544af4e75d8f90d886, type: 3}
+  - {fileID: 2800000, guid: 82244d26f787d6247b9040d3bc6e20a0, type: 3}
+  - {fileID: 2800000, guid: b09e1cfa2d7c7384fb0f844ad5cdec19, type: 3}
+  - {fileID: 2800000, guid: 5ae9ddebd652e15439d7cf99804a616c, type: 3}
+  - {fileID: 2800000, guid: c1d89ef5b4167c040b27fd5009d7d9ef, type: 3}
+  - {fileID: 2800000, guid: c6fc7ecb86b952b4782345ac90467db4, type: 3}
+  - {fileID: 2800000, guid: ffc9535442dcd0040ad6705a6a89666a, type: 3}
+  - {fileID: 2800000, guid: a08e2daef49f1274b987462d60e0c978, type: 3}
+  - {fileID: 2800000, guid: 370621cdb3aed00439f1cd112f0fbc2b, type: 3}
+  - {fileID: 2800000, guid: b8f36be7b68a0b04c957c893aafbaedb, type: 3}
+  - {fileID: 2800000, guid: 6fc719a93a4263042a5513be80749419, type: 3}
+  - {fileID: 2800000, guid: 048a1c6cf03b0ea40aaaec4761fef4b3, type: 3}
+  - {fileID: 2800000, guid: 18acbda14ca62584f83734fae2395670, type: 3}
+  - {fileID: 2800000, guid: 8a60221b9cd2a4147b1aeb7b0d76f382, type: 3}
+  - {fileID: 2800000, guid: bca4deefcaaa27f4b8295f4ca51807ea, type: 3}
+  - {fileID: 2800000, guid: 6183331d38b0cef42854b9d6d389be08, type: 3}
+  - {fileID: 2800000, guid: e353bdd5579d306408063201e9924622, type: 3}
+  - {fileID: 2800000, guid: baa2a1a1adffba34ca7c571f1c3aa142, type: 3}
+  - {fileID: 2800000, guid: 284210f3a2e270a43ac9a47f50a027c0, type: 3}
+  - {fileID: 2800000, guid: e70dddb65854f3d498be803114922e59, type: 3}
+  - {fileID: 2800000, guid: f308ff28590a68947a184a9217a05277, type: 3}
+  - {fileID: 2800000, guid: f3a12582219d81c4ea7c31132184f370, type: 3}
+  - {fileID: 2800000, guid: 2c894d6251ac15d418fde255a77f48bc, type: 3}
+  - {fileID: 2800000, guid: fde265064f8056c429bd1d06fe16b6de, type: 3}
+  - {fileID: 2800000, guid: 320f723c4e4ee284e9e173282f2b0902, type: 3}
+  - {fileID: 2800000, guid: 02aca1ba2d2d5f54a87062fce2adb635, type: 3}
+  - {fileID: 2800000, guid: f45d361c9db855c42a70b2871b79d98b, type: 3}
+  - {fileID: 2800000, guid: 29b826819646b1c4597870555d690f11, type: 3}
+  - {fileID: 2800000, guid: 123a8a050956c7941be1e88ef2395b65, type: 3}
+  - {fileID: 2800000, guid: 63465be0106ca1d4db444bd3fea8299d, type: 3}
+  - {fileID: 2800000, guid: f6d69ec4798465443804e6a1c2624274, type: 3}
+  - {fileID: 2800000, guid: fccf09f2107353e4684559f943fef19c, type: 3}
+  - {fileID: 2800000, guid: 0010d6f3fc17e9e498d7f93cf687c837, type: 3}
+  - {fileID: 2800000, guid: 98aa316a9fed7b5419eac9547fb78b36, type: 3}
+  - {fileID: 2800000, guid: 7a07df56c4c2f694a98121fcd46d5198, type: 3}
+  - {fileID: 2800000, guid: f81273945b91cae4789eaa06fb365a27, type: 3}
+  - {fileID: 2800000, guid: 1d2c06d7657da4b4589a4f0685cfa5d6, type: 3}
+  - {fileID: 2800000, guid: 5794efa30059a2e48a38e922e8770920, type: 3}
+  - {fileID: 2800000, guid: 366fa942648a62f47a55f8d3fb0c5a86, type: 3}
+  - {fileID: 2800000, guid: ab4a085542c0042418fc879fcbfd943a, type: 3}
+  - {fileID: 2800000, guid: 6c931200b09bf3e41888045f350a633e, type: 3}
+--- !u!114 &8673887046674710904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061209747044270351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77360f4968cc4d9489d73553fcb111c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIStartAnimation
+  elementAnimations:
+  - ElementID: History
+    parameters:
+    - parameter: 0
+      startValue: 0
+      endValue: 95
+      speed: 25
+  - ElementID: TerminalContent
+    parameters:
+    - parameter: 0
+      startValue: 0
+      endValue: 95
+      speed: 25

@@ -53,6 +53,7 @@ public class CannonController : MonoBehaviour
 
     public void ActiveCombatMode()
     {
+        NotificationServer.RemoveAll();
         TaskServer.Lock = true;
         cameraSwitch.Switch_Combat_Camera();
         player.gameObject.SetActive(false);

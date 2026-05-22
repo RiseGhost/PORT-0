@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,8 +13,8 @@ public class WordRushImplement: MiniGame
     [SerializeField] private MiniGameTechnologyAreaGroup technologyGroup;
     private OperatingSystem os;
     private bool completed = false;
-    private TaskImplement _task;
-    private Server _server;
+    private static TaskImplement _task;
+    private static Server _server;
     
     private static bool technologyAreaContains(MiniGameTechnologyArea technologyArea)
     {
@@ -53,20 +54,17 @@ public class WordRushImplement: MiniGame
     
     public void Start(Server server, Task task)
     {
+        MonoBehaviour.Instantiate(Resources.Load<GameObject>("UIDocument"),Vector3.zero,Quaternion.identity);
         os = server.serverStatus.os;
         _task = (TaskImplement) task;
         _server = server;
-        SceneManager.sceneLoaded += LoadTeachPhrases;
-        SceneManager.sceneUnloaded += UnloadPhrases;
-        SceneManager.LoadSceneAsync("WordRush", LoadSceneMode.Additive);
+        LoadTeachPhrases();
     }
 
-    private void UnloadPhrases(Scene scene)
+    private static void UnloadPhrases()
     {
-        if (scene.name != "WordRush") return;
+        //if (scene.name != "WordRush") return;
         CommandGameUI commandGameUI = GameObject.FindObjectOfType<CommandGameUI>();
-        Debug.Log("CommandGameUI is null -> " + (commandGameUI == null));
-        Debug.Log("CommandGameUI & commandWord is null -> " + (commandGameUI.commandWord == null));
         if (commandGameUI.commandWord.CompleteLevel())
         {
             _task.getMiniGame().setCompleted();
@@ -74,22 +72,21 @@ public class WordRushImplement: MiniGame
             if (_server != null) _server.addTask(_task);
         }
         MonoBehaviour.Destroy(commandGameUI.gameObject);
-        SceneManager.sceneLoaded -= LoadTeachPhrases;
+        //SceneManager.sceneLoaded -= LoadTeachPhrases;
     }
 
-    private void LoadTeachPhrases(Scene scene, LoadSceneMode mode)
+    private void LoadTeachPhrases()
     {
-        if (scene.name != "WordRush") return;
+        //if (scene.name != "WordRush") return;
         CommandGameUI commandGameUI = GameObject.FindObjectOfType<CommandGameUI>();
         if (commandGameUI == null)
             return;
         commandGameUI.setOperatingSystem(os.Name);
         commandGameUI.setPhrases(phrases.SelectByType(type).ToList());
-        SceneManager.sceneLoaded -= LoadTeachPhrases;
     }
     
     public static void Close()
     {
-        SceneManager.UnloadSceneAsync("WordRush");
+        UnloadPhrases();
     }
 }

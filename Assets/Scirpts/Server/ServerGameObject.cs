@@ -10,6 +10,33 @@ public class ServerGameObject : MonoBehaviour, StorageEntity
     private Vector3 currentPosition = Vector3.zero;
     private Rigidbody rigidbody;
 
+    void OnDestroy()
+    {
+        // 1. Verifica se foi porque o jogo fechou ou a cena mudou (evita falsos alarmes)
+        if (!Application.isPlaying) return;
+
+        // 2. Captura o StackTrace detalhado do sistema
+        string fullStackTrace = System.Environment.StackTrace;
+        
+        Debug.LogWarning($"⚠️ [SERVER DESTROYED] O objeto '{gameObject.name}' está a ser destruído!\n" +
+                         $"Subiu a partir de: {fullStackTrace}");
+
+        // 3. Método alternativo e ultra-focado (mostra quem chamou o Destroy explicitamente)
+        System.Diagnostics.StackTrace trace = new System.Diagnostics.StackTrace(true);
+        foreach (var frame in trace.GetFrames())
+        {
+            var method = frame.GetMethod();
+            // Ignora os métodos da própriaUnity e o próprio OnDestroy
+            if (method != null && 
+                !method.Name.Contains("OnDestroy") && 
+                !method.DeclaringType.Namespace.StartsWith("UnityEngine"))
+            {
+                Debug.LogError($"🎯 CULPADO ENCONTRADO: Classe [{method.DeclaringType.Name}] no método [{method.Name}] (Linha: {frame.GetFileLineNumber()})");
+                break; // Mostra apenas o primeiro culpado fora do ecossistema Unity
+            }
+        }
+    }
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();

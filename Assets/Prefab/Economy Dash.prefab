@@ -3243,7 +3243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: Profit / Expenses
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3258c9ebc19841f4a98fd4b5424407fe, type: 2}
   m_sharedMaterial: {fileID: 7905132843727958044, guid: 3258c9ebc19841f4a98fd4b5424407fe, type: 2}
