@@ -38,4 +38,11 @@ public class CannonBullet : MonoBehaviour
         yield return new WaitForSeconds(TTL);
         Destroy(gameObject);
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Shot trigger -> " + other.name);
+        Drone drone = other.GetComponent<Drone>();
+        if (drone != null) drone.TakeDamage(5);
+    }
 }

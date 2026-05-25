@@ -5,12 +5,8 @@ public class Drone : MonoBehaviour
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private float speed = 5f;
     [SerializeField] private DroneUILook uiLook;
+    [SerializeField] private float health = 10f;
     private Transform currentWaypoint = null;
-
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -40,5 +36,13 @@ public class Drone : MonoBehaviour
 
         if (Vector3.Distance(transform.position, currentWaypoint.position) < 0.1f)
             currentWaypoint = GetNextWaypoint();
+    }
+
+    public void TakeDamage(float damage)
+    {
+        Debug.Log("O drone tomou dano");
+        health -= damage;
+        if (health <= 0)
+            Destroy(gameObject);
     }
 }
