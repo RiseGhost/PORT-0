@@ -26,6 +26,12 @@ public class TaskServer
                 Debug.Log("TaskServer: Don't exist Operational ServerGameObject in the scene");
                 return;
             }
+            Install_OS_UI[] installOS = GameObject.FindObjectsByType<Install_OS_UI>(FindObjectsSortMode.None).ToArray();
+            if (installOS != null && installOS.Length > 0)
+            {
+                Debug.Log("TaskServer: Exist Install_OS_UI in the scene, not launching");
+                return;
+            }
             Task[] data     = Resources.Load<TaskTableObject>("Task/TaskTable").getTasks();
             Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).ToArray();
             if (tasks.Length == 0) Debug.Log("TaskServer: Don't exist Tasks to Launch");

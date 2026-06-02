@@ -23,7 +23,7 @@ MonoBehaviour:
       Description: Restarts Apache service
       Score: 100
       speed: 120
-    - Phrases: node index.js
+    - Phrases: service apache start
       Description: Runs a Node.js application
       Score: 100
       speed: 120

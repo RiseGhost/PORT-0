@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -20,8 +21,9 @@ public class EconomyDaskBoard : MonoBehaviour
 
     void Update()
     {
-        Scene scene = SceneManager.GetSceneByName("WordRush");
-        if (scene.isLoaded) return;
+        if (PlayerController.Lock) return;
+        EventSystem eventSystem = EventSystem.current;
+        if (eventSystem != null && eventSystem.currentSelectedGameObject != null) return;
         DaskBoard.gameObject.SetActive(visible);
         if (Keyboard.current[key].wasPressedThisFrame) visible = !visible;
     }

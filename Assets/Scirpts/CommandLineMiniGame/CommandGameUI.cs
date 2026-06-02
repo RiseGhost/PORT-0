@@ -22,6 +22,12 @@ public class CommandGameUI : MonoBehaviour
     void Awake()
     {
         commandWord.init();
+        PlayerController.Lock = true;
+    }
+
+    void OnDestroy()
+    {
+        PlayerController.Lock = false;
     }
 
     void Start()

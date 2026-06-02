@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CannonMechanic))]
 public class CannonController : MonoBehaviour
@@ -36,7 +38,9 @@ public class CannonController : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current[activeKey].wasPressedThisFrame)
+        if (PlayerController.Lock) return;
+        EventSystem eventSystem = EventSystem.current;
+        if (Keyboard.current[activeKey].wasPressedThisFrame && (eventSystem == null || eventSystem.currentSelectedGameObject == null))
         {
             if (!inCombat) ActiveCombatMode();
             else DeactiveCombatMode();

@@ -31,7 +31,7 @@ MonoBehaviour:
       Description: Enables Nginx at boot
       Score: 100
       speed: 120
-    - Phrases: sudo nginx -t
+    - Phrases: sudo nginx t
       Description: Tests Nginx configuration
       Score: 100
       speed: 120

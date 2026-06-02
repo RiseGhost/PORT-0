@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class EntryCombatCamera : MonoBehaviour
 {
@@ -17,7 +19,9 @@ public class EntryCombatCamera : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current[Key.L].wasPressedThisFrame) DDosLaunch();
+        if (PlayerController.Lock) return;
+        EventSystem eventSystem = EventSystem.current;
+        if (Keyboard.current[Key.L].wasPressedThisFrame && (eventSystem == null || eventSystem.currentSelectedGameObject == null)) DDosLaunch();
     }
 
     public void DDosLaunch()
