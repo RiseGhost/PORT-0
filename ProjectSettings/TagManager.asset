@@ -10,6 +10,7 @@ TagManager:
   - ShowCase
   - Teste
   - CameraEntry
+  - CombatCamera
   layers:
   - Default
   - TransparentFX

@@ -49,8 +49,8 @@ public class CylinderLines : MonoBehaviour
             float z = Mathf.Sin(angle) * radius;
             var line = Instantiate(lineRenderer,transform).GetComponent<LineRenderer>();
             line.positionCount = 2;
-            line.SetPosition(0,new Vector3(x,-80f,z) + transform.position);
-            line.SetPosition(1,new Vector3(x,80f,z) + transform.position);
+            line.SetPosition(0,new Vector3(x,-500f,z) + transform.position);
+            line.SetPosition(1,new Vector3(x,1000f,z) + transform.position);
         }
     }
 }

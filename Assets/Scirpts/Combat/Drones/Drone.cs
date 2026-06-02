@@ -1,12 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Drone : MonoBehaviour
 {
-    [SerializeField] private Transform[] waypoints;
+    [SerializeField] private int Points = 3;
     [SerializeField] private float speed = 5f;
     [SerializeField] private DroneUILook uiLook;
     [SerializeField] private float health = 10f;
+    private List<Transform> waypoints = new List<Transform>();
     private Transform currentWaypoint = null;
+
+    void Start()
+    {
+        WayPoints wayPoints = GameObject.FindAnyObjectByType<WayPoints>();
+        if (wayPoints == null) return;
+        this.waypoints = wayPoints.GetPoints(Points);
+    }
 
     void Update()
     {
@@ -20,13 +29,14 @@ public class Drone : MonoBehaviour
         if (currentWaypoint == null)
             return waypoints[0];
 
-        int currentIndex = System.Array.IndexOf(waypoints, currentWaypoint);
-        int nextIndex = (currentIndex + 1) % waypoints.Length;
+        int currentIndex = waypoints.IndexOf(currentWaypoint);
+        int nextIndex = (currentIndex + 1) % waypoints.Count;
         return waypoints[nextIndex];
     }
 
     protected void MoveTowardsWaypoint()
     {
+        if (waypoints.Count == 0) return;
         if (currentWaypoint == null)
             currentWaypoint = GetNextWaypoint();
 
@@ -40,7 +50,6 @@ public class Drone : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("O drone tomou dano");
         health -= damage;
         if (health <= 0)
             Destroy(gameObject);
