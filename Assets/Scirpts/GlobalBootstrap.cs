@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalBootstrap
 {
@@ -12,6 +13,11 @@ public class GlobalBootstrap
         new MoneyBank().Start();
         Application.targetFrameRate = 60;
         Application.quitting += () => { MoneyBank.Exit(); };
+        if (SceneManager.GetActiveScene().name.Equals("Game"))
+        {
+            GameObject AttackServer = new GameObject();
+            AttackServer.AddComponent<AttackServer>();
+        }
     }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

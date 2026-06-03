@@ -28,4 +28,6 @@ public static class ClientServer
         int randomIndex = Random.Range(0,clients.Length);
         return clients[randomIndex];
     }
+
+    public static string getPath(){ return path; }
 }

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeMenu.unity
     guid: 7b2f2d010915b294bbf99414b6c3560e
   - enabled: 1
-    path: Assets/Scenes/Teste FBX.unity
+    path: Assets/Scenes/Game.unity
     guid: e4bdae1c90f606443ada93cddae29ebd
   - enabled: 1
     path: Assets/Scenes/Credits.unity
