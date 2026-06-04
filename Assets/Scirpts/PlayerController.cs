@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
         action.Disable();
     }
 
+    void Awake()
+    {
+        TaskServer.Lock = false;
+    }
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();

@@ -18,7 +18,7 @@ public class Email
         Client[] clients = tableObjectClient.getClients();
         if (clients == null || clients.Length == 0) throw new Exception("Can not read client data, ou data is null");
         client = clients[UnityEngine.Random.Range(0,clients.Length)];
-        EmailTemplate emailTemplate = Resources.Load<EmailTemplate>("Email/Email Template");
+        EmailTemplate emailTemplate = Resources.Load<EmailTemplate>("Email/EmailTemplate");
         if (emailTemplate == null) throw new Exception("Erro to read email template data");
         EmailDTO[] emailDTOs = emailTemplate.GetEmails().Where(x => x.type == type).ToArray();
         if (emailDTOs == null || emailDTOs.Length == 0) throw new Exception("Email templates are empty or invalid");

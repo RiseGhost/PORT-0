@@ -121,6 +121,7 @@ public class CommandGameUI : MonoBehaviour
             if (Keyboard.current[Key.Q].wasPressedThisFrame)
             {
                 WordRushImplement.Close();
+                TaskServer.Lock = false;
                 break;
             }
             if (Keyboard.current[Key.R].wasPressedThisFrame)
