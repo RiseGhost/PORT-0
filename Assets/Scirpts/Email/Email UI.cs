@@ -9,6 +9,21 @@ public class EmailUI : MonoBehaviour
     private EmailBox _emailbox;
     private float LastEmailCount = 0f;
 
+    void OnEnable()
+    {
+        CameraFollow.LockRotate();
+    }
+
+    void OnDisable()
+    {
+        CameraFollow.UnlockRotate();
+    }
+
+    void OnDestroy()
+    {
+        CameraFollow.UnlockRotate();
+    }
+
     void Start()
     {
         if (SideMenu == null || toggleEmail_Template == null)

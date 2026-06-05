@@ -76,7 +76,6 @@ public class CameraFollow : MonoBehaviour
 
     public static void UnlockRotate()
     {
-        return;
         RotateCam = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
