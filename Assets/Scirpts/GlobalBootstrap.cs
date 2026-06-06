@@ -11,6 +11,8 @@ public class GlobalBootstrap
         GameObject storage = new GameObject();
         storage.AddComponent<StorageManager>();
         new MoneyBank().Start();
+        GameObject sound = new GameObject();
+        sound.AddComponent<SoundServer>();
         Application.targetFrameRate = 60;
         Application.quitting += () => { MoneyBank.Exit(); };
         if (SceneManager.GetActiveScene().name.Equals("Game"))

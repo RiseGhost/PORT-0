@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public abstract class ToggleWidget<E> : ProgrammaticWidget<Toggle, E>
@@ -9,7 +10,24 @@ public abstract class ToggleWidget<E> : ProgrammaticWidget<Toggle, E>
     private Color selectTextColor;
     private Color defaultTextColor;
     [SerializeField] protected TextMeshProUGUI label;
-    
+    [SerializeField] private AudioClip soundClick;
+    private AudioMixer mixer;
+
+    void Awake()
+    {
+        OnAwake();
+        mixer = Resources.Load<AudioMixer>("AudioMixer");
+        getWidget().onValueChanged.AddListener((bool isON) =>
+        {
+            if (isON){
+                if (soundClick == null) return;
+                SoundServer soundServer = GameObject.FindAnyObjectByType<SoundServer>();
+                if (soundServer == null || mixer == null) return;
+                soundServer.Play(soundClick,mixer.FindMatchingGroups("Effects")[0]);
+            }
+        });
+    }
+
     public override void setTitle(string title)
     {
         this.title = title;

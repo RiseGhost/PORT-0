@@ -7,7 +7,6 @@ public class AttackServer : MonoBehaviour
 {
     private Coroutine coroutine;
     private float min_task_to_attack = 3;
-    private float Gap_Attacks = 240;
     private EmailBox emailBox = null;
     public static bool Lock = false;
 
@@ -15,6 +14,7 @@ public class AttackServer : MonoBehaviour
     {
         Debug.Log("Attack Server UP ⚔️");
         name = "Attack Server";
+        Lock = false;
     }
 
     void Start(){
@@ -23,6 +23,7 @@ public class AttackServer : MonoBehaviour
 
     private IEnumerator run()
     {
+        yield return new WaitForSeconds(10f);
         while (true)
         {
             Server[] servers = GameObject.FindObjectsByType<ServerGameObject>(FindObjectsSortMode.None).ToList().Select(x => x.server).ToArray();
@@ -35,8 +36,7 @@ public class AttackServer : MonoBehaviour
                         Debug.Log("Attack System -> DDos Email send, with success");
                     } catch(Exception e){ Debug.Log("Attack System -> " + e.Message); }
                     TaskServer.Lock = true;
-                    yield return new WaitForSecondsRealtime(30f);
-                    yield return new WaitForSecondsRealtime(Gap_Attacks);
+                    Lock = true;
                 }
                 else Debug.Log("Attack System -> Don't exist email!");
             }

@@ -247,6 +247,7 @@ MonoBehaviour:
   Next: {fileID: 7734558629314562023}
   Previous: {fileID: 3154254415715975996}
   progressionPageWidget: {fileID: 2422690066176722747}
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
   FANS_Widget: {fileID: 8569094785103511104}
 --- !u!222 &5394147364873242778
 CanvasRenderer:

@@ -1672,6 +1672,7 @@ MonoBehaviour:
   Next: {fileID: 5876092063593102953}
   Previous: {fileID: 5079443622944002128}
   progressionPageWidget: {fileID: 3075343471043455818}
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
   Architect_Widget: {fileID: 6215221388423796915}
   Mark_Widget: {fileID: 2981764820198253299}
   CPU_WIDGET: {fileID: 1136090420957501961}

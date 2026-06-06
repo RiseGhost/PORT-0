@@ -6,6 +6,7 @@ public class Client
     [SerializeField] private Texture2D icon;
     [SerializeField] private string name;
     [SerializeField] private string description;
+    [SerializeField] private string email;
     [SerializeField] private Satisfaction satisfaction = Satisfaction.Neutral;
     [SerializeField] private bool is_organization = false;
     [SerializeField] private Organization organization;
@@ -17,7 +18,18 @@ public class Client
         this.name = name;
     }
 
+    public override bool Equals(object obj)
+    {
+        if (obj is Client)
+        {
+            Client c = (Client) obj;
+            return c.getEmail().Equals(email) && c.getName().Equals(name);
+        }
+        else return false;
+    }
+
     public string getName(){ return name; }
+    public string getEmail(){ return email; }
     public string getDescription(){ return description; }
     public bool IsOrganization(){ return is_organization; }
     public Organization getOrganization(){ return organization; }

@@ -5,42 +5,46 @@ using UnityEngine.UI;
 public class EmailUI : MonoBehaviour
 {
     [SerializeField] private Transform SideMenu;
+    [SerializeField] private EmailMainContent mainContent;
     [SerializeField] private ToggleEmail toggleEmail_Template;
     private EmailBox _emailbox;
+    private ToggleGroup toggleGroup;
     private float LastEmailCount = 0f;
+    private Email currentEmail = null;
 
-    void OnEnable()
-    {
-        CameraFollow.LockRotate();
-    }
-
-    void OnDisable()
-    {
-        CameraFollow.UnlockRotate();
-    }
-
-    void OnDestroy()
-    {
-        CameraFollow.UnlockRotate();
-    }
-
-    void Start()
-    {
+    void Start(){
         if (SideMenu == null || toggleEmail_Template == null)
         {
             Destroy(this.gameObject);
             return;
         }
         _emailbox = GameObject.FindAnyObjectByType<EmailBox>();
+        toggleGroup = SideMenu.GetComponent<ToggleGroup>();
     }
 
 
-    void Update()
-    {
+    void Update(){
         if (_emailbox == null)
         {
             _emailbox = GameObject.FindAnyObjectByType<EmailBox>();
             return;
+        }
+
+        if (toggleGroup == null) return;
+        Toggle toggle = toggleGroup.GetFirstActiveToggle();
+        if (toggle == null){
+            Debug.Log("Não existe nenhum toggle selecionado");
+            if (mainContent != null) mainContent.HiddenContent();
+        }
+        else{
+            ToggleEmail toggleSelect = toggleGroup.GetFirstActiveToggle().GetComponent<ToggleEmail>();
+            Email email = toggleSelect.getData();
+            if (currentEmail == null || !currentEmail.Equals(email)){
+                currentEmail = email;
+                if (mainContent != null) mainContent.setEmail(email);
+                Debug.Log("Novo email selecionado");
+            }
+            else Debug.Log("O Email selecionado e email ao atual.");
         }
 
         List<Email> emails = _emailbox.GetEmails();

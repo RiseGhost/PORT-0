@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tittle Bar Email
+  m_Name: Prefect Rec
   m_Shader: {fileID: -6465566751694194690, guid: 04f803c69780f184fbfa4de8a28dc7e4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,8 +44,7 @@ Material:
     - _Bottom_Left: 0
     - _Bottom_Rigth: 0
     - _ColorMask: 15
-    - _Radius: 0.139
-    - _Round: 0.15
+    - _Radius: 0.4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -57,7 +56,7 @@ Material:
     - _UIMaskSoftnessY: 1
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Size: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

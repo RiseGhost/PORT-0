@@ -293,6 +293,7 @@ MonoBehaviour:
   Next: {fileID: 2903903986016557237}
   Previous: {fileID: 5751140001847910660}
   progressionPageWidget: {fileID: 2489282034485725492}
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
   GROUP_HardDisks_Widget_template: {fileID: 6609359270630072935, guid: 304e8e5b6739b0e438a4979c036267f3, type: 3}
   ContentArea: {fileID: 1250175465893539043}
 --- !u!222 &6753782100565139651

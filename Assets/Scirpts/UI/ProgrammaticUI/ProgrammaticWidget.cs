@@ -11,6 +11,11 @@ public abstract class ProgrammaticWidget<T, E> : MonoBehaviour where T : Compone
 
     void Awake()
     {
+        OnAwake();
+    }
+
+    protected void OnAwake()
+    {
         widget = GetComponent<T>();
         if (widget == null) widget = gameObject.AddComponent<T>();
     }

@@ -99,7 +99,7 @@ public class Install_OS_UI : MonoBehaviour
                 storageManager.UpdateData(server);
                 NotificationServer.AddNotification(new NotificationDefault("OS Install","OS has been installed successfully."));
             }
-            Debug.Log("NextPage is null, closing the Install_OS_UI.");
+            TaskServer.Lock = false;
             Destroy(this.gameObject);
             return;
         }
