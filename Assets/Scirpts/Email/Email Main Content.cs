@@ -57,7 +57,7 @@ public class EmailMainContent : MonoBehaviour
     }
 
     public void setEmail(Email email){
-        if (isHidden) ShowContent();
+        if (isHidden && email != null) ShowContent();
         Debug.Log("Email Main Content are setter");
         if (email == null){
             ResetAll();

@@ -35,6 +35,7 @@ public class EmailUI : MonoBehaviour
         if (toggle == null){
             Debug.Log("Não existe nenhum toggle selecionado");
             if (mainContent != null) mainContent.HiddenContent();
+            currentEmail = null;
         }
         else{
             ToggleEmail toggleSelect = toggleGroup.GetFirstActiveToggle().GetComponent<ToggleEmail>();

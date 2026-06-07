@@ -60,7 +60,7 @@ public class EntryAnimation : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.016f);
             if (sense == -1 && FramesIndex > 0) FramesIndex--;
             if (sense == 1 && FramesIndex < frames.Length - 1) FramesIndex++;
-            if (FramesIndex == frames.Length - 1) SceneManager.LoadScene("Teste FBX");
+            if (FramesIndex == frames.Length - 1) SceneManager.LoadScene("Game");
             rawImage.texture = frames[FramesIndex];
         }
     }

@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Mono.Cecil;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class WordRushImplement: MiniGame

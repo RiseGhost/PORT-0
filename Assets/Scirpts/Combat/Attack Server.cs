@@ -34,9 +34,9 @@ public class AttackServer : MonoBehaviour
                     try{
                         emailBox.AddEmail(new Email(EmailType.DDosAttack));
                         Debug.Log("Attack System -> DDos Email send, with success");
-                    } catch(Exception e){ Debug.Log("Attack System -> " + e.Message); }
-                    TaskServer.Lock = true;
-                    Lock = true;
+                        TaskServer.Lock = true;
+                        Lock = true;
+                    } catch(Exception e){ Debug.LogError("Attack System -> " + e.Message); }
                 }
                 else Debug.Log("Attack System -> Don't exist email!");
             }
