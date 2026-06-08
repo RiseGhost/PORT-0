@@ -10,10 +10,12 @@ public class Email
 {
     private Client client;
     private String Subject, Body;
+    private EmailType type;
     public bool read = false;
 
     public Email(EmailType type)
     {
+        this.type = type;
         TableObjectClient tableObjectClient = Resources.Load<TableObjectClient>(ClientServer.getPath());
         Client[] clients = tableObjectClient.getClients();
         if (clients == null || clients.Length == 0) throw new Exception("Can not read client data, ou data is null");
@@ -43,4 +45,11 @@ public class Email
     public Client getClient(){ return client; }
     public string getSubject(){ return Subject; }
     public string getBody(){ return Body; }
+    public void Reading(){
+        read = true;
+        if (type == EmailType.DDosAttack){
+            ComputerUI computerUI = GameObject.FindAnyObjectByType<ComputerUI>();
+            if (computerUI != null) computerUI.ActivateAttack();
+        }
+    }
 }

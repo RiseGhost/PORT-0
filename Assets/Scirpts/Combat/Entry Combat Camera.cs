@@ -20,7 +20,6 @@ public class EntryCombatCamera : MonoBehaviour
     {
         if (PlayerController.Lock) return;
         EventSystem eventSystem = EventSystem.current;
-        if (Keyboard.current[Key.L].wasPressedThisFrame && (eventSystem == null || eventSystem.currentSelectedGameObject == null)) DDosLaunch();
     }
 
     public void DDosLaunch()
