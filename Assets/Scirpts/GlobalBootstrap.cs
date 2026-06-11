@@ -15,7 +15,12 @@ public class GlobalBootstrap
         sound.AddComponent<SoundServer>();
         Application.targetFrameRate = 60;
         Application.quitting += () => { MoneyBank.Exit(); };
-        if (SceneManager.GetActiveScene().name.Equals("Game"))
+        SceneManager.sceneLoaded += OnSceneLoad;
+    }
+
+    private static void OnSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Equals("Game"))
         {
             GameObject AttackServer = new GameObject();
             AttackServer.AddComponent<AttackServer>();

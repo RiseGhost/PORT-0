@@ -41,7 +41,9 @@ public class AttackServer : MonoBehaviour
                 else Debug.Log("Attack System -> Don't exist email!");
             }
             else
+            {
                 Debug.Log("Attack System -> The number os task is bellow the minimum or are Lock");
+            }
             yield return new WaitForSecondsRealtime(2.5f);
         }
     }
