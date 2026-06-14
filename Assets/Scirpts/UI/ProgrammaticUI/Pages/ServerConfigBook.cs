@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -14,9 +15,12 @@ public class ServerConfigBook : MonoBehaviour, UIBook
     private OSPage ospage;
     private List<UIPages> PageList = new List<UIPages>();
     private byte index = 0;
+    private const string Player_FirstTime_BuyServer = "FirstServer_Buy";
+    private float StartTime;
 
     void Start()
     {
+        StartTime = Time.time;
         foreach (UIPages page in pages)
         {
             if (page is CPUPage)
@@ -92,8 +96,17 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         Close();
     }
 
-    public void Close()
+    public async void Close()
     {
+        if (!PlayerPrefs.HasKey(Player_FirstTime_BuyServer))
+        {
+            PlayerPrefs.SetString(Player_FirstTime_BuyServer,"Completed");
+            PlayerPrefs.Save();
+            FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+            PlayerDataFirebase data = await firebase.getPlayerData(firebase.getUID());
+            data.TimeBuyServer = (float) Math.Round(Time.time - StartTime,2);
+            firebase.UpdateData(firebase.getUID(),data);
+        }
         CameraFollow.UnlockRotate();
         Destroy(this.gameObject);
     }

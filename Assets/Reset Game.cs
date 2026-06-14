@@ -15,9 +15,20 @@ public class ResetGame : MonoBehaviour{
     {
         string version_Save = PlayerPrefs.GetString("Application_Version");
         string version = Application.version;
-        if (version_Save == null || !version_Save.Equals(version)){
+        if (Application.isEditor)
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            MoneyBank.Reset();
+            BankAccount.Reset(Application.persistentDataPath);
+        }
+        else if (version_Save == null || !version_Save.Equals(version)){
             PlayerPrefs.DeleteAll();
             PlayerPrefs.SetString("Application_Version",Application.version);
+            PlayerPrefs.Save();
+            MoneyBank.Reset();
+            BankAccount.Reset(Application.persistentDataPath);
         }
+        GameObject.FindAnyObjectByType<FirebaseManager>().Play();
     }
 }

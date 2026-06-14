@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "903174350085",
+    "firebase_url": "https://port-0-6d282-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "port-0-6d282",
+    "storage_bucket": "port-0-6d282.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903174350085:android:c279109d6a61113c43c36c",
+        "android_client_info": {
+          "package_name": "com.riseghost.port0"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPhoyrdLeqYfYQ59JB2BlihSqBGwWtca8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

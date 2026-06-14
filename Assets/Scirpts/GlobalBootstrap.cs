@@ -13,6 +13,8 @@ public class GlobalBootstrap
         new MoneyBank().Start();
         GameObject sound = new GameObject();
         sound.AddComponent<SoundServer>();
+        GameObject firebase = new GameObject();
+        firebase.AddComponent<FirebaseManager>();
         Application.targetFrameRate = 60;
         Application.quitting += () => { MoneyBank.Exit(); };
         SceneManager.sceneLoaded += OnSceneLoad;

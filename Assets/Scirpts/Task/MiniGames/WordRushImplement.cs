@@ -13,6 +13,7 @@ public class WordRushImplement: MiniGame
     private bool completed = false;
     private static TaskImplement _task;
     private static Server _server;
+    private static float StartTime = 0f;
     
     private static bool technologyAreaContains(MiniGameTechnologyArea technologyArea)
     {
@@ -57,6 +58,7 @@ public class WordRushImplement: MiniGame
         _task = (TaskImplement) task;
         _server = server;
         LoadTeachPhrases();
+        StartTime = Time.time;
     }
 
     private static void UnloadPhrases()
@@ -82,9 +84,21 @@ public class WordRushImplement: MiniGame
         commandGameUI.setOperatingSystem(os.Name);
         commandGameUI.setPhrases(phrases.SelectByType(type).ToList());
     }
-    
-    public static void Close()
+
+    public static async void Close()
     {
         UnloadPhrases();
+        FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+        var data = await firebase.getPlayerData(firebase.getUID());
+        List<QuestTime> QuestTimes = data.TimeByQuest;
+        QuestTime questTime;
+        questTime.time = (float) Math.Round(Time.time - StartTime,2);
+        if (_task.getMiniGame() is WordRushImplement){
+            WordRushImplement wordRush = (WordRushImplement) _task.getMiniGame();
+            questTime.technology = wordRush.getMiniGameTechnologyAreaGroup().getGroup().Select(x => x.technology.ToString()).ToArray();
+        } else questTime.technology = Array.Empty<string>();
+        QuestTimes.Add(questTime);
+        data.TimeByQuest = QuestTimes;
+        await firebase.UpdateData(firebase.getUID(),data);
     }
 }
