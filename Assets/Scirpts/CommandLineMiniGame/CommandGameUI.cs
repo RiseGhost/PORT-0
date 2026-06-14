@@ -120,6 +120,7 @@ public class CommandGameUI : MonoBehaviour
             yield return null;
             if (Keyboard.current[Key.Q].wasPressedThisFrame)
             {
+                GameObject.FindFirstObjectByType<CameraSwitch>().Switch_main_camera();
                 WordRushImplement.Close();
                 TaskServer.Lock = false;
                 break;
