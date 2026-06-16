@@ -6,7 +6,7 @@ public class WaveLaunch
     private List<Drone> spawns = new List<Drone>();
     private int birthsNumber = 0;
 
-     public WaveLaunch(Drone[] drones)
+    public WaveLaunch(Drone[] drones)
     {
         TaskServer.Lock = true;
         NotificationServer.RemoveAll();
@@ -16,5 +16,5 @@ public class WaveLaunch
     }
 
     public int GetAliveDrones(){ return spawns.Where(x => x != null).Count(); }
-    public float AlivePercentage(){ return birthsNumber / GetAliveDrones(); }
+    public float AlivePercentage(){ return (((float) GetAliveDrones()) / ((float) birthsNumber)); }
 }

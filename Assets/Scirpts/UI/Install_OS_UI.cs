@@ -25,6 +25,7 @@ public class Install_OS_UI : MonoBehaviour
     void Start()
     {
         CameraFollow.LockRotate();
+        TaskServer.Lock = true;
     }
 
     public void setServer(Server server)
@@ -68,7 +69,7 @@ public class Install_OS_UI : MonoBehaviour
         }
         if (hiddenContent != null) StartCoroutine(ShowContent());
     }
-
+    
     public void NextButtomFunc()
     {
         if (WarringLabel != null && Install && hostname != null && hostname.text.Length < 3)
@@ -98,8 +99,9 @@ public class Install_OS_UI : MonoBehaviour
                 }
                 storageManager.UpdateData(server);
                 NotificationServer.AddNotification(new NotificationDefault("OS Install","OS has been installed successfully."));
+                TaskServer.Lock = false;
+                Debug.Log("Task Server set false " + TaskServer.Lock);
             }
-            TaskServer.Lock = false;
             Destroy(this.gameObject);
             return;
         }

@@ -75,3 +75,43 @@ MonoBehaviour:
       group: 1
       type: 0
       dataString: 
+  - Tflops: 0.2
+    Name: Email Service
+    Difficulty: 0
+    taskDescription:
+      type: 4
+      description: Create a costum email service
+    technologyGroup:
+      group:
+      - technology: 6
+        icon: {fileID: 2800000, guid: a90754cdfa1bb7747b03c31f874be7ca, type: 3}
+    miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 25
+      StartValue: 250
+      PeriodicValue: 10
+      group: 1
+      type: 0
+      dataString: 
+  - Tflops: 0.2
+    Name: Data Base
+    Difficulty: 0
+    taskDescription:
+      type: 0
+      description: Create a database
+    technologyGroup:
+      group:
+      - technology: 3
+        icon: {fileID: 2800000, guid: 70db7424a237a774bb1385e172f65d62, type: 3}
+    miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 25
+      StartValue: 250
+      PeriodicValue: 10
+      group: 1
+      type: 0
+      dataString: 

@@ -35,5 +35,6 @@ public class EntryCombatCamera : MonoBehaviour
         Entry_Camera_Combat.transform.position = origin_Transform.position;
         Entry_Camera_Combat.transform.rotation = origin_Transform.rotation;
         Entry_Camera_Combat.gameObject.SetActive(false);
+        GameObject.FindFirstObjectByType<CannonController>().ActiveCombatMode();
     }
 }

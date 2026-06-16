@@ -25,7 +25,7 @@ public class BX1EntryDance : StateMachineBehaviour
                 childrens.Add(child.gameObject);
             }
             Drone[] drones = childrens.Select(x => x.GetComponent<Drone>()).ToList().Where(x => x != null).ToArray();
-            new WaveLaunch(drones);
+            GameObject.FindFirstObjectByType<CombatUI>().setWave(new WaveLaunch(drones));
         }
     }
 

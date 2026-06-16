@@ -55,6 +55,7 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
+        if (PlayerController.Lock) return;
         if (Camera.main == null || Camera.main.gameObject.activeInHierarchy == false) return;
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
         // Atualiza apenas a rotação horizontal
@@ -62,7 +63,7 @@ public class CameraFollow : MonoBehaviour
             yaw += mouseDelta.x * sensitivity;
 
         // Move suavemente a câmara
-        camTrans.parent.position = transform.position + Quaternion.Euler(0,yaw + 90,0) * new Vector3(-distance,distance * 0.7f,-distance);
+        camTrans.parent.position = transform.position + Quaternion.Euler(0,Mathf.Clamp(yaw + 90,30,140),0) * new Vector3(-distance,distance * 0.7f,-distance);
         FollowPos = Vector3.Lerp(FollowPos,transform.position + Vector3.up * 3f,Time.deltaTime * followSpeed);
         camTrans.LookAt(FollowPos);
     }

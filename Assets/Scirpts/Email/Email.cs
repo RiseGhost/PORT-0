@@ -23,7 +23,11 @@ public class Email
         EmailTemplate emailTemplate = Resources.Load<EmailTemplate>("Email/Email Template");
         if (emailTemplate == null){
             Subject = "Slow Connecting";
-            Body = "Teste Email";
+            Body = "Dear Technical Support Team," +
+            "\nI am experiencing significant performance issues with my website hosted on your infrastructure. The website has become noticeably slow, and this is negatively affecting my customers' experience." +
+            "\nCould you please investigate the server performance and check if there are any issues that might be causing these delays? Any assistance in identifying and resolving the problem would be greatly appreciated." +
+            "\nThank you for your support." +
+            "\nKind regards,\n" + client.getName();
             return;
         }
         EmailDTO[] emailDTOs = emailTemplate.GetEmails().Where(x => x.type == type).ToArray();

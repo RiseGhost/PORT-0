@@ -15,7 +15,59 @@ MonoBehaviour:
   tasks:
   - Tflops: 0.5
     Name: Personal Webiste
+    Difficulty: 0
     taskDescription:
       type: 2
       description: Host my personal website
+    technologyGroup:
+      group: []
     miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 0
+      StartValue: 0
+      PeriodicValue: 0
+      group: 0
+      type: 0
+      dataString: 
+  - Tflops: 0.5
+    Name: Personal Webiste
+    Difficulty: 0
+    taskDescription:
+      type: 4
+      description: Host my personal website
+    technologyGroup:
+      group:
+      - technology: 6
+        icon: {fileID: 0}
+    miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 0
+      StartValue: 0
+      PeriodicValue: 0
+      group: 0
+      type: 0
+      dataString: 
+  - Tflops: 0.5
+    Name: Personal Webiste
+    Difficulty: 0
+    taskDescription:
+      type: 0
+      description: Host my personal website
+    technologyGroup:
+      group:
+      - technology: 3
+        icon: {fileID: 0}
+    miniGameType: 0
+    Space: 10
+    promisePay:
+      currentrate: 0
+      payrate: 0
+      StartValue: 0
+      PeriodicValue: 0
+      group: 0
+      type: 0
+      dataString: 

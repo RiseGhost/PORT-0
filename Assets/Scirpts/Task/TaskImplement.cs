@@ -36,11 +36,11 @@ public class TaskImplement : Task
     
     virtual public void Launch(MonoBehaviour anchor)
     {
+        TaskServer.Lock = true;
         NotificationTask noti = new NotificationTask(Name,taskDescription.description,Key.Tab,Key.X,anchor);
         Client client = ClientServer.random();
         if (client != null) this.client = client;
         noti.setTask(this);
         noti.Show();
-        TaskServer.Lock = true;
     }
 }

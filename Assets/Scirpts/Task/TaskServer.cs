@@ -7,6 +7,7 @@ public class TaskServer
     public static bool Lock = false;
     public TaskServer(TaskDifficulty difficulty,MonoBehaviour anchor)
     {
+        
         if (Lock){
             Debug.Log("TaskServer: Lock is true, not launching");
             return;

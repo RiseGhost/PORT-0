@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(15);
+            yield return new WaitForEndOfFrame();
             new TaskServer(TaskDifficulty.Very_Easy,this);
         }
     }

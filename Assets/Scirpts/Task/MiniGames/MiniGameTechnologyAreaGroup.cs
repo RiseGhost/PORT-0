@@ -27,14 +27,11 @@ public class MiniGameTechnologyAreaGroup
 
     public MiniGameTechnologyArea[] getGroup(){ return group; }
 
-    public bool ContainsAllArea(MiniGameTechnologyAreaGroup technologyGroup)
+    public bool ContainsAllArea(MiniGameTechnologyAreaGroup other)
     {
-        MiniGameTechnologyArea[] areas = technologyGroup.group;
-        if (areas.Length > group.Length) return false;
-        foreach(MiniGameTechnologyArea area in group)
-        {
-            if (!areas.Contains(area)) return false;
-        }
-        return true;
+        if (other == null || other.group == null)
+            return false;
+
+        return group.All(x => other.group.Contains(x));
     }
 }
