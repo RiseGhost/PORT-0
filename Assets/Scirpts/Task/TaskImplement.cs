@@ -34,7 +34,7 @@ public class TaskImplement : Task
     public Client GetClient(){ return client; }
     public float getSpace(){ return Space;}
     
-    virtual public void Launch(MonoBehaviour anchor)
+    virtual public Notification Launch(MonoBehaviour anchor)
     {
         TaskServer.Lock = true;
         NotificationTask noti = new NotificationTask(Name,taskDescription.description,Key.Tab,Key.X,anchor);
@@ -42,5 +42,6 @@ public class TaskImplement : Task
         if (client != null) this.client = client;
         noti.setTask(this);
         noti.Show();
+        return noti;
     }
 }

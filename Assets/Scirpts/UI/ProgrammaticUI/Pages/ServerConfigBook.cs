@@ -18,8 +18,24 @@ public class ServerConfigBook : MonoBehaviour, UIBook
     private const string Player_FirstTime_BuyServer = "FirstServer_Buy";
     private float StartTime;
 
+    void OnEnable()
+    {
+        TaskServer.Lock = true;
+    }
+
+    void OnDisable()
+    {
+        TaskServer.Lock = false;
+    }
+
+    void OnDestroy()
+    {
+        TaskServer.Lock = false;
+    }
+
     void Start()
     {
+        TaskServer.Lock = true;
         StartTime = Time.time;
         foreach (UIPages page in pages)
         {

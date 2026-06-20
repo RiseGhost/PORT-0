@@ -3,7 +3,8 @@ using System.Linq;
 using UnityEngine;
 
 public enum EmailType{
-    DDosAttack
+    DDosAttack,
+    PowerSupply
 }
 
 public class Email
@@ -22,12 +23,17 @@ public class Email
         client = clients[UnityEngine.Random.Range(0,clients.Length)];
         EmailTemplate emailTemplate = Resources.Load<EmailTemplate>("Email/Email Template");
         if (emailTemplate == null){
-            Subject = "Slow Connecting";
-            Body = "Dear Technical Support Team," +
-            "\nI am experiencing significant performance issues with my website hosted on your infrastructure. The website has become noticeably slow, and this is negatively affecting my customers' experience." +
-            "\nCould you please investigate the server performance and check if there are any issues that might be causing these delays? Any assistance in identifying and resolving the problem would be greatly appreciated." +
-            "\nThank you for your support." +
-            "\nKind regards,\n" + client.getName();
+            if (type == EmailType.DDosAttack){
+                Subject = "Slow Connecting";
+                Body = "Dear Technical Support Team," +
+                "\nI am experiencing significant performance issues with my website hosted on your infrastructure. The website has become noticeably slow, and this is negatively affecting my customers' experience." +
+                "\nCould you please investigate the server performance and check if there are any issues that might be causing these delays? Any assistance in identifying and resolving the problem would be greatly appreciated." +
+                "\nThank you for your support." +
+                "\nKind regards,\n" + client.getName();
+            }
+            else if (type == EmailType.PowerSupply){
+                Subject = "Power Supply down";
+            }
             return;
         }
         EmailDTO[] emailDTOs = emailTemplate.GetEmails().Where(x => x.type == type).ToArray();
@@ -39,6 +45,7 @@ public class Email
 
     public override bool Equals(object obj)
     {
+        if (obj == null) return false;
         if (obj is Email){
             Email e = (Email) obj;
             return e.getClient().Equals(client) && e.getSubject().Equals(Subject) && e.getBody().Equals(Body);
@@ -50,10 +57,17 @@ public class Email
     public string getSubject(){ return Subject; }
     public string getBody(){ return Body; }
     public void Reading(){
-        read = true;
+        if (read) return;
         if (type == EmailType.DDosAttack){
             ComputerUI computerUI = GameObject.FindAnyObjectByType<ComputerUI>();
             if (computerUI != null) computerUI.ActivateAttack();
+            read = true;
+        }
+        else if (type == EmailType.PowerSupply)
+        {
+            ComputerUI computerUI = GameObject.FindAnyObjectByType<ComputerUI>();
+            if (computerUI != null) computerUI.ReturnEnergy();
+            read = true;
         }
     }
 }

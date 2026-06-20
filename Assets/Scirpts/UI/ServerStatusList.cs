@@ -10,6 +10,8 @@ public class ServerStatusList : MonoBehaviour
     [SerializeField] Slider TFLOPS_Slider, WATTS_Slider;
     [SerializeField] ServerConfigBook serverConfigBook;
     [SerializeField] private TextMeshProUGUI PriceText;
+    [SerializeField] private GameObject Warring_Content, Warring_Window;
+    private static float MAX_WATTS_To_Warring = 550.0f;
     private float currentFLOPS_Value = 0f, currentWatts_Value = 0f;
     private GROUP_CPUS_Widget group_cpus;
     private GROUP_FANS_Widget group_fans;
@@ -18,6 +20,7 @@ public class ServerStatusList : MonoBehaviour
     void Start()
     {
         if (serverConfigBook == null) Destroy(this);
+        if (Warring_Window != null) Warring_Window.gameObject.SetActive(false);
     }
 
     void Update()
@@ -53,5 +56,16 @@ public class ServerStatusList : MonoBehaviour
         {
             PriceText.text = serverConfigBook.getPrice().ToString("000.00") + "$";
         }
+
+        if (Warring_Content != null)
+        {
+            Warring_Content.gameObject.SetActive(Watts >= MAX_WATTS_To_Warring);
+        }
     }
+
+    public static float get_MAX_WATTS_To_Warring(){ return MAX_WATTS_To_Warring; }
+
+    public void Show_Warring_Window(){ if (Warring_Window != null) Warring_Window.gameObject.SetActive(true); }
+
+    public void Hidden_Warring_Window(){ if (Warring_Window != null) Warring_Window.gameObject.SetActive(false); }
 }

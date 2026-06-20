@@ -50,6 +50,6 @@ MonoBehaviour:
     socket: 3
     motherBoardMark: 1
     Model: Rock Boy
-    Watts: 45
+    Watts: 75
     MaxDisk: 5
     Price: 140

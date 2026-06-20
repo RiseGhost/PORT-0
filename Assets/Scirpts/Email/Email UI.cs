@@ -44,6 +44,7 @@ public class EmailUI : MonoBehaviour
                 currentEmail = email;
                 if (mainContent != null) mainContent.setEmail(email);
                 Debug.Log("Novo email selecionado");
+                email.Reading();
             }
             else Debug.Log("O Email selecionado e email ao atual.");
         }

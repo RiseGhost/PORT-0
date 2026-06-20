@@ -50,6 +50,6 @@ MonoBehaviour:
     socket: 5
     motherBoardMark: 0
     Model: XS
-    Watts: 25
+    Watts: 40
     MaxDisk: 5
     Price: 80

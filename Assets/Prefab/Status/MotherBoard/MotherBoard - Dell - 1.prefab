@@ -50,6 +50,6 @@ MonoBehaviour:
     socket: 1
     motherBoardMark: 0
     Model: Super X
-    Watts: 30
+    Watts: 50
     MaxDisk: 5
     Price: 100

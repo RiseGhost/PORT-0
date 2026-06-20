@@ -54,5 +54,5 @@ MonoBehaviour:
     modelo: RX 5
     Temperature_Decrement: 20
     Price: 5
-    Watts: 10
+    Watts: 50
     exhibitor: {fileID: 4710529151711303628, guid: 6f12b60336475ef4b93f4c3f1839b92f, type: 3}

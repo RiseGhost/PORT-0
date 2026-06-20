@@ -9,6 +9,6 @@ public interface Task
     public float getSpace();
     public MiniGameTechnologyAreaGroup getTechnologyAreaGroup();
     public TaskDifficulty getDifficulty();
-    public void Launch(MonoBehaviour anchor);
+    public Notification Launch(MonoBehaviour anchor);
     public Client GetClient();
 }

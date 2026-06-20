@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3186084293579863408}
   - component: {fileID: 3626118173213853319}
   - component: {fileID: 3014243721757368846}
+  - component: {fileID: 2299549848122959579}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -345,3 +346,16 @@ MonoBehaviour:
   radius: 85
   segments: 180
   width: 0.2
+--- !u!114 &2299549848122959579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221558555026785114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaff65e8cb5c5dc43b73dfff397bc40e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MatrixLines
+  No_Energy: {fileID: 2100000, guid: ca0657c94a30aa347baa6df1fd9372e5, type: 2}
