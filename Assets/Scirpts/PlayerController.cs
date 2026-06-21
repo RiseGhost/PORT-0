@@ -54,7 +54,6 @@ public class PlayerController : MonoBehaviour
     private IEnumerator teste()
     {
         yield return new WaitForSeconds(20);
-        new TaskServer(TaskDifficulty.Very_Easy,this);
         while (true)
         {
             yield return new WaitForSeconds(15);

@@ -32,6 +32,7 @@ public class PopUpTask : MonoBehaviour
     
     void Start()
     {
+        TaskServer.Lock = true;
         if (SliderOk == null || SliderCancel == null || LabelCancel == null || LabelOk == null)
         {
             Destroy(this.gameObject);
@@ -71,6 +72,11 @@ public class PopUpTask : MonoBehaviour
                 x.slider.value = value;
             } 
         }
+    }
+
+    void Update()
+    {
+        if (!PowerSupply.Exist_Energy()) Destroy(gameObject);
     }
 
     public void SetTask(Task task)

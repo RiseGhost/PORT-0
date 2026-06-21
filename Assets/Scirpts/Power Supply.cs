@@ -14,6 +14,7 @@ public class PowerSupply
             AudioClip powerOff = Resources.Load<AudioClip>("SFX/Power Off");
             if (powerOff != null) GameObject.FindAnyObjectByType<SoundServer>().Play(powerOff,audioMixer.FindMatchingGroups("Effects")[0]);
         }
+        if (TaskServer.Last_Notification != null) NotificationServer.RemoveNotification(TaskServer.Last_Notification);
         Lights[] lights = GameObject.FindObjectsByType<Lights>(FindObjectsSortMode.None);
         foreach (Lights l in lights) l.Deactivate();
     }

@@ -158,7 +158,9 @@ public class NotificationServer : MonoBehaviour
     
     private void DestroyNotification(Notification notification)
     {
-        GetVisualElementZone(notification.GetZone()).RemoveAt(0);
+        VisualElement zone = GetVisualElementZone(notification.GetZone());
+        if (zone.childCount > 0)  zone.RemoveAt(0);
+        else return;
         switch (notification.GetZone())
         {
             case NotificationsZone.Top:
