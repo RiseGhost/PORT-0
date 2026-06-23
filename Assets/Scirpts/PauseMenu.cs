@@ -1,18 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class PauseMenu : MonoBehaviour
 {
-    
-    private VisualTreeAsset visualTree;
-    private PanelSettings panelSettings;
+    private Canvas canvas;
     private bool visible = false;
-    private GameObject menu;
 
     void Awake()
     {
@@ -22,67 +15,31 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        visualTree = Resources.Load<VisualTreeAsset>("UI/PauseMenu/Menu");
-        panelSettings = Resources.Load<PanelSettings>("UI/PauseMenu/Panel");
+        canvas = Resources.Load<Canvas>("UI/Pause Menu");
+        if (canvas == null) Destroy(this.gameObject);
+        canvas = Instantiate(canvas,Vector3.zero,Quaternion.identity);
+        canvas.name = "Pause Menu Canvas";
+        canvas.gameObject.SetActive(false);
+        DontDestroyOnLoad(canvas);
         DontDestroyOnLoad(this);
     }
 
     void Update()
     {
-        if (menu != null) FadeEffect(Time.unscaledDeltaTime/100f,170);
-        if (!Keyboard.current[Key.Escape].wasPressedThisFrame) return;
-        visible = !visible;
-        if (visible)
-        {
-            CameraFollow.LockRotate();
-            Time.timeScale = 0f;
-            if (menu == null) menu = new GameObject("PauseMenu");
-            UIDocument uI = menu.AddComponent<UIDocument>();
-            uI.sortingOrder = 1000;
-            uI.visualTreeAsset = visualTree;
-            uI.panelSettings = panelSettings;
-            StartCoroutine(setNavigation(uI.rootVisualElement));
+        if (!SceneManager.GetActiveScene().name.Equals("Game")){
+            visible = false;
+            return;
         }
-        else DestroyMenu();
-    }
-
-
-    public void DestroyMenu()
-    {
-        visible = false;
-        Time.timeScale = 1f;
-        CameraFollow.UnlockRotate();
-        Destroy(menu);
-    }
-
-    private System.Collections.IEnumerator setNavigation(VisualElement visualElement)
-    {
-        yield return new WaitForSecondsRealtime(0.2f);
-        List<Button> buttons = visualElement.Query<Button>().ToList();
-        buttons.ForEach(x => x.focusable = true);
-        buttons.First().clicked += () => DestroyMenu();
-        buttons.Last().clicked += () =>
+        if (Keyboard.current[Key.Escape].wasPressedThisFrame) visible = !visible;
+        if (Keyboard.current[Key.M].wasPressedThisFrame)
         {
-            Application.Quit();
-        };
-        visualElement.Q<Button>("btn_MainMenu").clicked += () =>
-        {
-            DestroyMenu();
+            visible = false;
+            Time.timeScale = 1;
             SceneManager.LoadScene("HomeMenu");
-        };
-        if (buttons.Count > 0) buttons.First().Focus();
-    }
-
-    private void FadeEffect(float speed, float targetAlpha)
-    {
-        try
-        {
-           VisualElement ve = menu.GetComponent<UIDocument>().rootVisualElement;
-            VisualElement bgc = ve.Q<VisualElement>("BackgroundColor");
-            Color currentColor = bgc.style.backgroundColor.value;
-            if (currentColor.a >= targetAlpha) return;
-            currentColor.a = Mathf.Lerp(currentColor.a, targetAlpha, speed);
-            bgc.style.backgroundColor = currentColor; 
-        } catch (Exception e){}
+        }
+        if (Keyboard.current[Key.Q].wasPressedThisFrame) Application.Quit();
+        canvas.gameObject.SetActive(visible);
+        if (visible) Time.timeScale = 0f;
+        else Time.timeScale = 1f; 
     }
 }

@@ -32,7 +32,14 @@ public class Email
                 "\nKind regards,\n" + client.getName();
             }
             else if (type == EmailType.PowerSupply){
+                TableObjectClient citys = Resources.Load<TableObjectClient>("Task/Clients City");
+                client = citys.getClients()[0];
                 Subject = "Power Supply down";
+                Body = "Dear Sir/Madam," +
+                "\nWe have recently detected an unusually high level of energy consumption in the local grid, which appears to be significantly above historical averages." +
+                "\nAt this stage, we kindly ask that energy usage be moderated where possible in order to help maintain grid stability and avoid potential future penalties or restrictions. Please note that no penalties are being applied at this time, as we are actively working with the relevant stakeholders to assess and resolve the situation." +
+                "\nWe appreciate your cooperation and understanding while we address this matter. Should any further action be required, we will provide additional guidance in due course." +
+                "\nKind regards,\n Long view City";
             }
             return;
         }

@@ -58,11 +58,12 @@ public class NotificationServer : MonoBehaviour
             Destroy(this);
         }
         Starting = false;
+
+        NewNotification?.Invoke();
     }
 
     public static void AddNotification(Notification notification)
     {
-        if (Starting)   return;
         switch (notification.GetZone())
         {
             case NotificationsZone.Top:
@@ -77,13 +78,13 @@ public class NotificationServer : MonoBehaviour
             default:
                 break;
         }
-        NewNotification.Invoke();
+        NewNotification?.Invoke();
     }
 
     public static void RemoveNotification(Notification notification)
     {
         if (Starting) return;
-        RemoveNotificationEvent.Invoke(notification);
+        RemoveNotificationEvent?.Invoke(notification);
     }
 
     public static void RemoveAll()
@@ -178,6 +179,7 @@ public class NotificationServer : MonoBehaviour
             default:
                 break;
         }
+        ProcessNewNotification();
     }
 
     private IEnumerator ProcessDestroyNotification(Notification notification)
@@ -188,7 +190,7 @@ public class NotificationServer : MonoBehaviour
         else
         {
             yield return new WaitForSecondsRealtime(notification.GetTTL());
-            RemoveNotificationEvent.Invoke(notification);
+            RemoveNotificationEvent?.Invoke(notification);
         }
     }
 }
