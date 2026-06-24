@@ -90,17 +90,10 @@ public class WordCard
         if (on == highlighted) return;
         highlighted = on;
 
-        // usa width/height como o resto do código; se forem 0, o "zoom" será imperceptível
-        if (originalWidth <= 0f || originalHeight <= 0f) return;
-
         if (on) {
-            //root.AddToClassList("highlight");
-            root.style.scale = new Scale(new Vector2(1.8f, 1.8f));
-            Debug.Log("[Word Highlighted] Word: " + word);
+            root.style.scale = new Scale(new Vector2(1.3f, 1.3f));
         } else {
-            //root.RemoveFromClassList("highlight");
             root.style.scale = new Scale(Vector2.one);
-            Debug.Log("[Word Highlighted] false Word: " + word);
         }
     }
 }

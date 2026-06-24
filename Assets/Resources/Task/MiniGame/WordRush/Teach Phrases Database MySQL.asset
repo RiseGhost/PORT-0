@@ -27,7 +27,7 @@ MonoBehaviour:
       Description: Opens MySQL shell
       Score: 100
       speed: 120
-    - Phrases: craete database app
+    - Phrases: create database app
       Description: Creates a database
       Score: 100
       speed: 120
