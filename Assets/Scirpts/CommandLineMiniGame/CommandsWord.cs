@@ -102,8 +102,17 @@ public class CommandWords
         CardsMove.First().Destroy((spawnWordsElement == null) ? father_root : spawnWordsElement);
         score += CardsMove.First().score;
         CardsMove.RemoveAt(0);
-        if (!commands[completeCommands.Count].Phrases.Split(" ").SequenceEqual(word)) return CommandState.Correct;
+        if (!commands[completeCommands.Count].Phrases.Split(" ").SequenceEqual(word))
+        {
+            // Destacar a próxima palavra imediatamente após remover a atual
+            if (CardsMove.Count > 0)
+                CardsMove.First().SetHighlighted(true);
+            return CommandState.Correct;
+        }
         completeCommand();
+        // Após completar um comando, destacar a próxima palavra se existir
+        if (CardsMove.Count > 0)
+            CardsMove.First().SetHighlighted(true);
         return CommandState.Complete;
     }
 
@@ -130,10 +139,16 @@ public class CommandWords
 
         if (spawnWordsElement == null) father_root.Add(wordUI);
         else spawnWordsElement.Add(wordUI);
-        CardsMove.Add(new WordCard(wordUI, word.Word, word.Score, commands[completeCommands.Count].speed));
+        
+        WordCard newCard = new WordCard(wordUI, word.Word, word.Score, commands[completeCommands.Count].speed);
+        CardsMove.Add(newCard);
+        
+        // Se é a primeira palavra na lista, aplicar destaque imediatamente
+        if (CardsMove.Count == 1)
+            newCard.SetHighlighted(true);
     }
 
-        public void MoveCards(float deltaTime, string lastword)
+    public void MoveCards(float deltaTime, string lastword)
     {
         if (CardsMove.Count() == 0) return;
         CardsMove.First().UpdateCompleteBar(lastword, deltaTime);

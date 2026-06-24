@@ -37,7 +37,6 @@ public class CommandGameUI : MonoBehaviour
         if (root == null) Destroy(this.gameObject);
         inputCommands = root.Q<Label>("Inputs");
         scoreLabel = root.Q<Label>("ScorePoints");
-        root.styleSheets.Add(Resources.Load<StyleSheet>("UI/wordcard"));
         commandWord.setVisualRoot(root);
         ApplyOSColorTheme();
         ApplyDesktopTheme();
