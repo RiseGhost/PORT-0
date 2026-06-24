@@ -1,3 +1,4 @@
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,6 +14,13 @@ public class WordCard
     private VisualElement root;
     private bool isDestroy = false;
     private VisualElement content;
+
+    // campos para escala/original size
+    private float originalWidth = 1;
+    private float originalHeight = 1;
+    private bool highlighted = false;
+    private const float HIGHLIGHT_SCALE = 5f; // ajuste o valor se quiseres mais/menos aumento
+
     public WordCard(VisualElement root, string word, ushort score, ushort speed)
     {
         this.root = root;
@@ -22,12 +30,16 @@ public class WordCard
         this.score = score;
         content = root.Q<VisualElement>("Content");
         offsetDis = 0;
+
+        // Guardar tamanho original (usa o mesmo padrão que o código existente)
+        originalWidth = root.style.width.value.value;
+        originalHeight = root.style.height.value.value;
     }
 
     public void UpdatePosition(float DeltaTime)
     {
         float y = root.style.top.value.value;
-        y += DeltaTime * speed * ((offsetDis > 0) ? 1 : -1);
+        y += DeltaTime * speed * (offsetDis > 0 ? 1 : -1);
         root.style.top = y;
         offsetDis += DeltaTime * speed;
         top = y;
@@ -63,12 +75,25 @@ public class WordCard
         root.Add(visualElement);
     }
 
-    public bool isOver() { return root.style.top.value.value > Screen.height - 75 - root.style.height.value.value; }
+    public bool isOver() { return root.style.top.value.value > Screen.height - 220 - root.style.height.value.value; }
 
     public bool isCompesed() { return offsetDis > 0; }
 
     public void changeSense()
     {
         offsetDis = -200;
+    }
+
+    // marcar/desmarcar destaque (pequeno aumento de escala)
+    public void SetHighlighted(bool on)
+    {
+        if (on == highlighted) return;
+        highlighted = on;
+
+        // usa width/height como o resto do código; se forem 0, o "zoom" será imperceptível
+        if (originalWidth <= 0f || originalHeight <= 0f) return;
+
+        if (on) root.AddToClassList("highlight"); 
+        else root.RemoveFromClassList("highlight");
     }
 }

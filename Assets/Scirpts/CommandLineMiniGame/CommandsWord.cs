@@ -133,14 +133,22 @@ public class CommandWords
         CardsMove.Add(new WordCard(wordUI, word.Word, word.Score, commands[completeCommands.Count].speed));
     }
 
-    public void MoveCards(float deltaTime, string lastword)
+        public void MoveCards(float deltaTime, string lastword)
     {
         if (CardsMove.Count() == 0) return;
         CardsMove.First().UpdateCompleteBar(lastword, deltaTime);
-        if (CardsMove.First().isOver())
+
+        // ALTERAÇÃO: se ANY word isOver -> inverter sentido de todas.
+        if (CardsMove.Any(c => c.isOver()))
         {
             CardsMove.ForEach(i => i.changeSense());
+
+            // remover destaque de todos e destacar o próximo (próxima palavra a ser escrita)
+            CardsMove.ForEach(i => i.SetHighlighted(false));
+            if (CardsMove.Count > 0)
+                CardsMove.First().SetHighlighted(true);
         }
+
         CardsMove.ForEach(i => i.UpdatePosition(deltaTime));
     }
 
