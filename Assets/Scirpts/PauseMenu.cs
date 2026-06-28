@@ -31,13 +31,13 @@ public class PauseMenu : MonoBehaviour
             return;
         }
         if (Keyboard.current[Key.Escape].wasPressedThisFrame) visible = !visible;
-        if (Keyboard.current[Key.M].wasPressedThisFrame)
+        if (Keyboard.current[Key.M].wasPressedThisFrame && visible)
         {
             visible = false;
             Time.timeScale = 1;
             SceneManager.LoadScene("HomeMenu");
         }
-        if (Keyboard.current[Key.Q].wasPressedThisFrame) Application.Quit();
+        if (Keyboard.current[Key.Q].wasPressedThisFrame && visible) Application.Quit();
         canvas.gameObject.SetActive(visible);
         if (visible) Time.timeScale = 0f;
         else Time.timeScale = 1f; 

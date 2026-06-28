@@ -22,7 +22,7 @@ public class ResetGame : MonoBehaviour{
             MoneyBank.Reset();
             BankAccount.Reset(Application.persistentDataPath);
         }
-        else if (version_Save == null || !version_Save.Equals(version)){
+        else if (!PlayerPrefs.HasKey("Application_Version") || !version_Save.Equals(version)){
             PlayerPrefs.DeleteAll();
             PlayerPrefs.SetString("Application_Version",Application.version);
             PlayerPrefs.Save();

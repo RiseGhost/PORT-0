@@ -35,7 +35,7 @@ public class CameraSwitch : MonoBehaviour
     {
         if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != null)
             return;
-        if (Keyboard.current[Key.C].wasPressedThisFrame) Switch();
+        //if (Keyboard.current[Key.C].wasPressedThisFrame) Switch();
     }
 
     public Camera Switch()

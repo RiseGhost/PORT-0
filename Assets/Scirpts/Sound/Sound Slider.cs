@@ -13,10 +13,11 @@ public class SoundSlider : MonoBehaviour
         if (_audioMixer == null) return;
         Slider slider = GetComponent<Slider>();
         slider.value = PlayerPrefs.GetFloat(SoundServer.getSoundType_SaveName(_type),0);
+        _audioMixer.SetFloat(SoundServer.getSoundType_MixerName(_type),slider.value);
         slider.onValueChanged.AddListener((value) =>
         {
             float sound_value = (value == slider.minValue) ? -80f : value;
-            PlayerPrefs.SetFloat(SoundServer.getSoundType_SaveName(_type),value);
+            PlayerPrefs.SetFloat(SoundServer.getSoundType_SaveName(_type),sound_value);
             PlayerPrefs.Save();
             _audioMixer.SetFloat(SoundServer.getSoundType_MixerName(_type),sound_value);
         });
