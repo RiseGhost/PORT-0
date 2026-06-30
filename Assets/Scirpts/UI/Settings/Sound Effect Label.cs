@@ -16,7 +16,7 @@ public class SoundEffectLabel : MonoBehaviour
     void Update()
     {
         float newvalue = _slider.value + Mathf.Abs(_slider.minValue);
-        float maxPrecent = _slider.maxValue + Mathf.Abs(_slider.minValue);
+        float maxPrecent = Mathf.Abs(_slider.minValue);
         float precent = (newvalue * 100f) / maxPrecent;
         _text.text = ((precent < 100f) ? " " : "") + precent.ToString("F1") + " %";
     }

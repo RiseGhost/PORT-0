@@ -7,6 +7,7 @@ public class SoundSlider : MonoBehaviour
 {
     [SerializeField] private SoundType _type;
     private AudioMixer _audioMixer;
+    [SerializeField] private AudioClip clickSound;
 
     void Start(){
         _audioMixer = Resources.Load<AudioMixer>("AudioMixer");
@@ -16,6 +17,7 @@ public class SoundSlider : MonoBehaviour
         _audioMixer.SetFloat(SoundServer.getSoundType_MixerName(_type),slider.value);
         slider.onValueChanged.AddListener((value) =>
         {
+            if (clickSound != null) GameObject.FindFirstObjectByType<SoundServer>().Play(clickSound,_audioMixer.FindMatchingGroups("Effects")[0]);
             float sound_value = (value == slider.minValue) ? -80f : value;
             PlayerPrefs.SetFloat(SoundServer.getSoundType_SaveName(_type),sound_value);
             PlayerPrefs.Save();

@@ -1021,6 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundSlider
   _type: 2
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
 --- !u!1 &405330826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2189519872958672633, guid: 8313f2ee966a9b14bbd4cf70b28e330b, type: 3}
@@ -1068,6 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundSlider
   _type: 0
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
 --- !u!1 &509596246
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundSlider
   _type: 1
+  clickSound: {fileID: 8300000, guid: 5e4112f140b0b06469b7a746664e1f21, type: 3}
 --- !u!114 &1682634520 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4243382197794438401, guid: 8313f2ee966a9b14bbd4cf70b28e330b, type: 3}
