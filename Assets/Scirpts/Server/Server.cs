@@ -32,6 +32,21 @@ public class Server : SaveItem
                                + serverStatus.motherBoardStatus.GetValue().Price 
                                + serverStatus.disks.Select(x => x.GetValue().Price).Sum());
         MoneyBank.addPromisePay(serverPay);
+        //FireBaseStatus().RunSynchronously();
+    }
+
+    private async System.Threading.Tasks.Task FireBaseStatus()
+    {
+        FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+        if (firebase != null)
+        {
+            string uid = firebase.getUID();
+            var data = await firebase.getPlayerData(uid);
+            var listWatts = data.ServerWatts;
+            listWatts.Add(serverStatus.getWatts());
+            data.ServerWatts = listWatts;
+            await firebase.UpdateData(uid,data);
+        }
     }
 
     public void Load(string json)

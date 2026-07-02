@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ public class CannonController : MonoBehaviour
     private CannonMechanic cannonMechanic;
     private bool inCombat = false;
     private float horizontal = 0, vertical = 0;
+    private float StartTimeCombat = 0f;
 
     void OnEnable()
     {
@@ -56,6 +58,7 @@ public class CannonController : MonoBehaviour
 
     public void ActiveCombatMode()
     {
+        StartTimeCombat = Time.time;
         NotificationServer.RemoveAll();
         TaskServer.Lock = true;
         cameraSwitch.Switch_Combat_Camera();
@@ -64,8 +67,20 @@ public class CannonController : MonoBehaviour
         if (aim != null) aim.gameObject.SetActive(true);
     }
 
-    public void DeactiveCombatMode()
+    public async void DeactiveCombatMode()
     {
+        FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+        if (firebase != null)
+        {
+            string uid = firebase.getUID();
+            PlayerDataFirebase data = await firebase.getPlayerData(uid);
+            if (data != null && data.TimeToDestroyEnemys == 0)
+            {
+                data.TimeToDestroyEnemys = Time.time - StartTimeCombat;
+                if (data.TotalTime == 0f) data.TotalTime = Time.time;
+                await firebase.UpdateData(uid,data);
+            }
+        }
         TaskServer.Lock = false;
         cameraSwitch.Switch_main_camera();
         player.gameObject.SetActive(true);

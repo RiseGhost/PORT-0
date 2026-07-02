@@ -121,6 +121,7 @@ public class PlayerDataFirebase
     public string GameVersion;
     public string OperatingSystem;
     public float TimeBuyServer = 0;
+    public List<float> ServerWatts = new List<float>();
     public List<QuestTime> TimeByQuest = new List<QuestTime>();
     public float TimeToDestroyEnemys = 0;
     public float TotalTime = 0;

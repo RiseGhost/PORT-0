@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -39,6 +37,7 @@ public class CannonAim : MonoBehaviour
 
     private void Aim()
     {
+        if (this == null)           return;
         if (lineRenderer == null) lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.SetPosition(0, transform.position);
         float distance = currentDistance;

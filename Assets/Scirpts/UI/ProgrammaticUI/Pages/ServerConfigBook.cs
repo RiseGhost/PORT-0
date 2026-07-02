@@ -99,7 +99,7 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         return Price;
     }
 
-    public void BackOver()
+    public async void BackOver()
     {
         new NotificationDefault("Delivery Fast", "Server on the Way.").Show();
         ServerStatusStruct serverStatus = new ServerStatusStruct();
@@ -108,21 +108,24 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         serverStatus.motherBoardStatus = MotherBoardPage.getMotherBoardWidget().getSelect();
         serverStatus.disks = diskPage.getDisksStatuses();
         serverStatus.os = ospage.getGROUP_OS_Widget().getSelect().GetValue();
-        new Server(serverStatus);
-        Close();
-    }
-
-    public async void Close()
-    {
+        Server server = new Server(serverStatus);
+        FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+        PlayerDataFirebase data = await firebase.getPlayerData(firebase.getUID());
         if (!PlayerPrefs.HasKey(Player_FirstTime_BuyServer))
         {
             PlayerPrefs.SetString(Player_FirstTime_BuyServer,"Completed");
             PlayerPrefs.Save();
-            FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
-            PlayerDataFirebase data = await firebase.getPlayerData(firebase.getUID());
             data.TimeBuyServer = (float) Math.Round(Time.time - StartTime,2);
-            firebase.UpdateData(firebase.getUID(),data);
         }
+        var listWatts = data.ServerWatts;
+        listWatts.Add(server.serverStatus.getWatts());
+        data.ServerWatts = listWatts;
+        await firebase.UpdateData(firebase.getUID(),data);
+        Close();
+    }
+
+    public void Close()
+    {
         CameraFollow.UnlockRotate();
         Destroy(this.gameObject);
     }
