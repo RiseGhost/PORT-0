@@ -11,24 +11,24 @@ using UnityEngine;
 */
 
 public class ResetGame : MonoBehaviour{
-    void Start()
+    void Awake()
     {
         string version_Save = PlayerPrefs.GetString("Application_Version");
         string version = Application.version;
-        if (Application.isEditor)
-        {
+        #if UNITY_EDITOR
             PlayerPrefs.DeleteAll();
             PlayerPrefs.Save();
             MoneyBank.Reset();
             BankAccount.Reset(Application.persistentDataPath);
-        }
-        else if (!PlayerPrefs.HasKey("Application_Version") || !version_Save.Equals(version)){
-            PlayerPrefs.DeleteAll();
-            PlayerPrefs.SetString("Application_Version",Application.version);
-            PlayerPrefs.Save();
-            MoneyBank.Reset();
-            BankAccount.Reset(Application.persistentDataPath);
-        }
+        #else
+            if (!PlayerPrefs.HasKey("Application_Version") || !version_Save.Equals(version)){
+                PlayerPrefs.DeleteKey("DataSave");
+                PlayerPrefs.SetString("Application_Version",Application.version);
+                PlayerPrefs.Save();
+                MoneyBank.Reset();
+                BankAccount.Reset(Application.persistentDataPath);
+            }
+        #endif
         GameObject.FindAnyObjectByType<FirebaseManager>().Play();
     }
 }

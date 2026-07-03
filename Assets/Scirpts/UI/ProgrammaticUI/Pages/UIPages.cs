@@ -16,7 +16,8 @@ public class UIPages : MonoBehaviour
         if (book == null || Next == null) Destroy(this);
         Next.onClick.AddListener(OnNextClicked);
         if (Previous != null) Previous.onClick.AddListener(OnPreviousClicked);
-        mixer = Resources.Load<AudioMixer>("AudioMixer");
+        SoundServer soundServer = GameObject.FindFirstObjectByType<SoundServer>();
+        mixer = soundServer.GetAudioMixer();
     }
 
     void OnNextClicked()

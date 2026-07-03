@@ -8,11 +8,12 @@ public class PowerSupply
 
     public static void Break(){ 
         Energy = false;
-        if (audioMixer == null) audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+        SoundServer soundServer = GameObject.FindFirstObjectByType<SoundServer>();
+        if (audioMixer == null) audioMixer = soundServer.GetAudioMixer();
         if (audioMixer != null)
         {
             AudioClip powerOff = Resources.Load<AudioClip>("SFX/Power Off");
-            if (powerOff != null) GameObject.FindAnyObjectByType<SoundServer>().Play(powerOff,audioMixer.FindMatchingGroups("Effects")[0]);
+            if (powerOff != null) soundServer.Play(powerOff,audioMixer.FindMatchingGroups("Effects")[0]);
         }
         if (TaskServer.Last_Notification != null) NotificationServer.RemoveNotification(TaskServer.Last_Notification);
         Lights[] lights = GameObject.FindObjectsByType<Lights>(FindObjectsSortMode.None);
@@ -20,11 +21,12 @@ public class PowerSupply
     }
     public static void Return(){ 
         Energy = true;
-        if (audioMixer == null) audioMixer = Resources.Load<AudioMixer>("AudioMixer");
+        SoundServer soundServer = GameObject.FindFirstObjectByType<SoundServer>();
+        if (audioMixer == null) audioMixer = soundServer.GetAudioMixer();
         if (audioMixer != null)
         {
             AudioClip powerOn = Resources.Load<AudioClip>("SFX/Power On");
-            if (powerOn != null) GameObject.FindAnyObjectByType<SoundServer>().Play(powerOn,audioMixer.FindMatchingGroups("Effects")[0]);
+            if (powerOn != null) soundServer.Play(powerOn,audioMixer.FindMatchingGroups("Effects")[0]);
         }
         Lights[] lights = GameObject.FindObjectsByType<Lights>(FindObjectsSortMode.None);
         foreach (Lights l in lights) l.Active();

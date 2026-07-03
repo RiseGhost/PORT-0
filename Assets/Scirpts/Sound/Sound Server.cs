@@ -11,26 +11,27 @@ public enum SoundType
 
 public class SoundServer : MonoBehaviour
 {
+    private AudioMixer audioMixer = null;
     void Awake()
     {
         Debug.Log("Sound Server: is ready .🎶");
         name = "Sound Server";
         DontDestroyOnLoad(this.gameObject);
         StartCoroutine(AudioClean());
+        audioMixer = Resources.Load<AudioMixer>("AudioMixer");
     }
 
     void Start()
     {
-        AudioMixer audioMixer = Resources.Load<AudioMixer>("AudioMixer");
         if (audioMixer == null) Debug.Log("Sound Server -> AudioMixer is null");
         float MasterVolume = PlayerPrefs.GetFloat(getSoundType_SaveName(SoundType.Master),0);
         float MusicVolume = PlayerPrefs.GetFloat(getSoundType_SaveName(SoundType.Music),0);
         float EffectsVolume = PlayerPrefs.GetFloat(getSoundType_SaveName(SoundType.Effect),0);
         Debug.Log("Sound Server -> Master = " + MasterVolume + " Music = " + MusicVolume + " Effects = " + EffectsVolume);
         if (audioMixer == null) return;
-        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Master),(MasterVolume <= -20f) ? -80f : MasterVolume);
-        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Music),(MusicVolume <= -20f) ? -80f : MusicVolume);
-        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Effect),(EffectsVolume <= -20f) ? -80f : EffectsVolume);
+        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Master),MasterVolume);
+        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Music),MusicVolume);
+        audioMixer.SetFloat(getSoundType_MixerName(SoundType.Effect),EffectsVolume);
     }
 
     public static string getSoundType_SaveName(SoundType type)
@@ -72,6 +73,8 @@ public class SoundServer : MonoBehaviour
         audio.volume = 1.0f;
         audio.Play();
     }
+
+    public AudioMixer GetAudioMixer(){ return audioMixer; }
 
     private IEnumerator AudioClean()
     {
