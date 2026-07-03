@@ -103,6 +103,7 @@ MonoBehaviour:
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -285,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GROUP_HardDisks_Widget
   selectColor: {r: 0.81960785, g: 0.81960785, b: 0.81960785, a: 1}
-  defaultColor: {r: 0.15686275, g: 0.15686275, b: 0.16862746, a: 1}
+  defaultColor: {r: 0.15686275, g: 0.15686275, b: 0.16862746, a: 0}
   selectTextColor: {r: 0, g: 0, b: 0, a: 1}
   defaultTextColor: {r: 1, g: 1, b: 1, a: 1}
   AutoSelectChild: 0
@@ -458,6 +459,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
