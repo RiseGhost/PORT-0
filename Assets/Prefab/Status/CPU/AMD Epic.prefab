@@ -50,7 +50,7 @@ MonoBehaviour:
   Architect: {fileID: 7562063358051115864, guid: ed072033074083044ac99a8d5d6889b6, type: 3}
   Mark: {fileID: 4320160992310900593, guid: b4465facebd56bd4a8686ac038b20ae1, type: 3}
   CPUPerformance: {fileID: 7871995264678575893, guid: b1fc93c6b708ac742be176b28223ffb1, type: 3}
-  sockets: 0
+  sockets: 4
   Price: 110
   Watts: 110
   icon: {fileID: 0}

@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CPUSStatusList
   processorStatuses:
   - {fileID: 1648889729183347288, guid: 0ee021ccad6e8b7479aadb612ab7d442, type: 3}
+  - {fileID: 1648889729183347288, guid: 2c23a0c24e2cb6f44b5404d4a7531a29, type: 3}
   - {fileID: 1648889729183347288, guid: 93435f068a8357f4e8ec67ee46013f6b, type: 3}
   - {fileID: 1648889729183347288, guid: 6295e24f38a224444bb0fb7271478bb2, type: 3}
   - {fileID: 1648889729183347288, guid: 5c09a1e0b32ea3e48af7009d73d831c3, type: 3}
   - {fileID: 1648889729183347288, guid: 294fbb47f587c1246a337fd2d85dc255, type: 3}
+  - {fileID: 1648889729183347288, guid: 34ca64e44c1551a4bba3184519ff55cf, type: 3}

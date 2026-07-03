@@ -1269,10 +1269,13 @@ MonoBehaviour:
   AutoSelectChild: 0
   Status:
   - {fileID: 1156731867978920146, guid: 10992442fa0791443b2070dcf1789f21, type: 3}
+  - {fileID: 1156731867978920146, guid: 96c074a9d146cde4aaae5d76e2b09f43, type: 3}
   - {fileID: 1156731867978920146, guid: 1a1bbd23a2ff11f41b907d71b268a038, type: 3}
   - {fileID: 1156731867978920146, guid: 176c40e3bc3da3a4cbce277712ca0601, type: 3}
   - {fileID: 1156731867978920146, guid: 20bb426b9ab51ac47ad5ea554d684d1d, type: 3}
   - {fileID: 1156731867978920146, guid: 9ea279a518589d442a53c0eaf7f4f706, type: 3}
+  - {fileID: 1156731867978920146, guid: 513ae1c2bf9b3664384192fab925f9ba, type: 3}
+  - {fileID: 1156731867978920146, guid: bff99cade3473904cb2c34880e1c26d4, type: 3}
   template: {fileID: 8579723196510532204, guid: 896bb15c3dda04c49be7973791bb3ca6, type: 3}
   cpus: {fileID: 0}
 --- !u!1 &5648241935627777760

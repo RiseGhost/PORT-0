@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8225985224733668400}
   - component: {fileID: 1648889729183347288}
   m_Layer: 0
-  m_Name: Intel Xeon 2500
+  m_Name: Intel Space One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,12 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProcessorStatus
   ID: d258afff-786a-4aa1-a304-533bc561f7a4
   type: 3
-  value: Intel Xeon 2500
-  Architect: {fileID: 7562063358051115864, guid: ed072033074083044ac99a8d5d6889b6, type: 3}
+  value: Intel Space One
+  Architect: {fileID: 7562063358051115864, guid: d22e0288c5cadef48902f661dee4d147, type: 3}
   Mark: {fileID: 4320160992310900593, guid: 7887709d3e2b4bf4bb14e64abae91098, type: 3}
-  CPUPerformance: {fileID: 7871995264678575893, guid: d28c32f988c2e92488b44af020bccbe8, type: 3}
-  sockets: 3
-  Price: 205
-  Watts: 220
+  CPUPerformance: {fileID: 7871995264678575893, guid: d27d416e268666f468fa251a0ec8c635, type: 3}
+  sockets: 0
+  Price: 300
+  Watts: 192
   icon: {fileID: 0}
   exhibitor: {fileID: 5979801520391976739, guid: a9d6ad9d22f2152499280d045142b7cb, type: 3}

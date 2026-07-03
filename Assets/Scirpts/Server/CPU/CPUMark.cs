@@ -3,5 +3,6 @@ public enum CPUMark
 {
     Intel,
     Amd,
-    IMB
+    IMB,
+    Nvidia
 }
