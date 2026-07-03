@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Animator))]
 public class SliderHandleZoomAnimator : MonoBehaviour

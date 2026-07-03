@@ -16,7 +16,8 @@ public abstract class ToggleWidget<E> : ProgrammaticWidget<Toggle, E>
     void Awake()
     {
         OnAwake();
-        mixer = Resources.Load<AudioMixer>("AudioMixer");
+        SoundServer soundServer = GameObject.FindAnyObjectByType<SoundServer>();
+        mixer = soundServer.GetAudioMixer();
         getWidget().onValueChanged.AddListener((bool isON) =>
         {
             if (isON){
