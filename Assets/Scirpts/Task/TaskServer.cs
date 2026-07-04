@@ -7,6 +7,7 @@ using UnityEngine;
 public class TaskServer
 {
     private static bool _lock = false;
+    private static short TotalTask = 0;
     public static bool Lock
     {
         get => _lock;
@@ -57,7 +58,7 @@ public class TaskServer
             }
             ServerGameObject[] servers = serversGameObjects.Select(x => x.GetComponent<ServerGameObject>()).ToArray();
             int Expense_Servers = servers.Select(x => x.server.serverStatus.getWatts()).Where( x => x > ServerStatusList.get_MAX_WATTS_To_Warring()).Count();
-            if (Expense_Servers >= 2 && !EnergyBreak)
+            if (PowerSupply.PowerOut_Will_Exit() && !EnergyBreak)
             {
                 Lock = true;
                 EnergyBreak = true;
@@ -79,7 +80,10 @@ public class TaskServer
             Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).ToArray();
             if (tasks.Length == 0) UnityEngine.Debug.Log("TaskServer: Don't exist Tasks to Launch");
             int randomIndex = UnityEngine.Random.Range(0,tasks.Length);
-            Last_Notification = tasks[randomIndex].Launch(anchor);
+            Task selectTask = tasks[randomIndex];
+            if (TotalTask == 1) selectTask.setSpace(GameObject.FindFirstObjectByType<ServerGameObject>().server.getAvailableSpace());
+            Last_Notification = selectTask.Launch(anchor);
+            TotalTask++;
         } catch (Exception e){}
     }
 

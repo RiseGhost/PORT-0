@@ -87,6 +87,16 @@ public class FloatingUI : MonoBehaviour, FloatingUIInterface
         StartCoroutine(WaitUIExit());
     }
 
+    void OnEnable()
+    {
+        UI.gameObject.SetActive(true);
+    }
+
+    void OnDisable()
+    {
+        UI.gameObject.SetActive(false);
+    }
+
     private IEnumerator WaitUIExit()
     {
         while (UI != null || UI.gameObject.active)

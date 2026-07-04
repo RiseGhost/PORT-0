@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /*
@@ -29,6 +30,17 @@ public class ResetGame : MonoBehaviour{
                 BankAccount.Reset(Application.persistentDataPath);
             }
         #endif
+    }
+
+    void Start()
+    {
+        StartCoroutine(StartFirebase());
+    }
+
+    private IEnumerator StartFirebase()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(0.3f);
         GameObject.FindAnyObjectByType<FirebaseManager>().Play();
     }
 }

@@ -8,6 +8,7 @@ public class ServerGameObject : MonoBehaviour, StorageEntity
     public SaveItem GetSaveItem() { return server; }
     private bool heighlight = false;
     private Vector3 currentPosition = Vector3.zero;
+    private ServerMonitorScreen serverMonitorScreen = null;
     private Rigidbody rigidbody;
 
     void OnDestroy()
@@ -39,6 +40,7 @@ public class ServerGameObject : MonoBehaviour, StorageEntity
 
     void Start()
     {
+        serverMonitorScreen = GetComponent<ServerMonitorScreen>();
         rigidbody = GetComponent<Rigidbody>();
         ServersPlace place = GameObject.FindFirstObjectByType<ServersPlace>();
         if (place == null) return;
@@ -58,6 +60,7 @@ public class ServerGameObject : MonoBehaviour, StorageEntity
             transform.position = Vector3.Lerp(transform.position,currentPosition + new Vector3(0,2f,0),Time.deltaTime);
         }
         else currentPosition = transform.position;
+        if (serverMonitorScreen != null) serverMonitorScreen.enabled = !PowerSupply.PowerOut_Will_Exit();
     }
     
     void FixedUpdate()

@@ -33,6 +33,7 @@ public class TaskImplement : Task
     public MiniGameTechnologyAreaGroup getTechnologyAreaGroup() { return technologyGroup; }
     public Client GetClient(){ return client; }
     public float getSpace(){ return Space;}
+    public void setSpace(float Space){ this.Space = Space; }
     
     virtual public Notification Launch(MonoBehaviour anchor)
     {
