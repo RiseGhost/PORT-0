@@ -11,7 +11,7 @@ public class ServerStatusList : MonoBehaviour
     [SerializeField] ServerConfigBook serverConfigBook;
     [SerializeField] private TextMeshProUGUI PriceText;
     [SerializeField] private GameObject Warring_Content, Warring_Window;
-    private static float MAX_WATTS_To_Warring = 550.0f;
+    private const float MAX_WATTS_To_Warring = 550.0f;
     private float currentFLOPS_Value = 0f, currentWatts_Value = 0f;
     private GROUP_CPUS_Widget group_cpus;
     private GROUP_FANS_Widget group_fans;

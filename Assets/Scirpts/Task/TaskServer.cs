@@ -33,6 +33,10 @@ public class TaskServer
     }
     private static bool EnergyBreak = false;
     public static Notification Last_Notification = null;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    public static void Reset(){ TotalTask = 0; }
+
     public TaskServer(TaskDifficulty difficulty,MonoBehaviour anchor)
     {
         if (!PowerSupply.Exist_Energy())
@@ -77,11 +81,11 @@ public class TaskServer
                 return;
             }
             Task[] data     = Resources.Load<TaskTableObject>("Task/TaskTable").getTasks();
-            Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).ToArray();
+            Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).Select(x => x.clone()).ToArray();
             if (tasks.Length == 0) UnityEngine.Debug.Log("TaskServer: Don't exist Tasks to Launch");
             int randomIndex = UnityEngine.Random.Range(0,tasks.Length);
             Task selectTask = tasks[randomIndex];
-            if (TotalTask == 1) selectTask.setSpace(GameObject.FindFirstObjectByType<ServerGameObject>().server.getAvailableSpace());
+            if (TotalTask == 1) selectTask.IncrementSpace(GameObject.FindFirstObjectByType<ServerGameObject>().server.getAvailableSpace() - selectTask.getSpace());
             Last_Notification = selectTask.Launch(anchor);
             TotalTask++;
         } catch (Exception e){}

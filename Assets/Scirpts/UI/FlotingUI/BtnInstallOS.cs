@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -30,7 +29,7 @@ public class BtnInstallOS : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Keyboard.current[AcceptKey].isPressed) value += 0.5f;
+        if (Keyboard.current[AcceptKey].isPressed && !PowerSupply.PowerOut_Will_Exit()) value += 0.5f;
         else value -= 0.5f;
         if (value > 100f) value = 100f;
         if (value < 0f) value = 0f;

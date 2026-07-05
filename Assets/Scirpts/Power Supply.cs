@@ -46,8 +46,8 @@ public class PowerSupply
         if (targetFailed == null || targetFailed.Count == 0) return false;
         GameObject[] serversGameObject = GameObject.FindGameObjectsWithTag("ServerGameObject");
         List<ServerStatusStruct> serverStatus = serversGameObject.Select(x => x.GetComponent<ServerGameObject>().server.serverStatus).ToList();
-        var limitedWatts = serverStatus.Select(x => x.getWatts() > ServerStatusList.get_MAX_WATTS_To_Warring()).ToArray();
-        if (limitedWatts.Count() >=  targetFailed.First()){
+        var limitedWatts = serverStatus.Select(x => x.getWatts() > ServerStatusList.get_MAX_WATTS_To_Warring()).Where(x => x == true).ToArray();
+        if (limitedWatts.Count() >=  targetFailed[0]){
             targetFailed.RemoveAt(0);
             FuturePowerSupplyOut = true;
             return true;

@@ -110,15 +110,19 @@ public class ServerTaskSelect : MonoBehaviour
                 }
                 TaskSelectServerDescription serverDescription = Instantiate(this.serverDescriptionTemplate,Buttons_Container.transform).GetComponent<TaskSelectServerDescription>();
                 serverDescription.setServer(toggle.getData().server);
-                Button confirm_btn = Instantiate(next_btn_template, Buttons_Container.transform).GetComponent<Button>();
-                confirm_btn.GetComponentInChildren<TextMeshProUGUI>().text = "Confirm";
-                confirm_btn.onClick.AddListener(() =>
+                if (server != null && server.getAvailableSpace() >= task.getSpace() && server.getAvailableTFLOPS() >= task.getTflops())
                 {
-                    if (task == null) return;
-                    task.getMiniGame().Start(server, task);
-                    Destroy(this.gameObject);
-                    return;
-                });
+                    Button confirm_btn = Instantiate(next_btn_template, Buttons_Container.transform).GetComponent<Button>();
+                    confirm_btn.GetComponentInChildren<TextMeshProUGUI>().text = "Confirm";
+                    confirm_btn.onClick.AddListener(() =>
+                    {
+                        if (task == null) return;
+                        task.getMiniGame().Start(server, task);
+                        Destroy(this.gameObject);
+                        return;
+                    });
+                }
+                
                 Button back_btn = Instantiate(cancel_btn_template, Buttons_Container.transform).GetComponent<Button>();
                 back_btn.GetComponentInChildren<TextMeshProUGUI>().text = "Back";
                 back_btn.onClick.AddListener(() =>

@@ -7,7 +7,8 @@ public interface Task
     public TaskDescription getTaskDescription();
     public MiniGame getMiniGame();
     public float getSpace();
-    public void setSpace(float Space);
+    public void IncrementSpace(float Space);
+    public Task clone();
     public MiniGameTechnologyAreaGroup getTechnologyAreaGroup();
     public TaskDifficulty getDifficulty();
     public Notification Launch(MonoBehaviour anchor);

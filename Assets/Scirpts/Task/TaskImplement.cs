@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +12,7 @@ public class TaskImplement : Task
     [SerializeField] public MiniGameType miniGameType = MiniGameType.WordRush;
     [SerializeField] public float Space = 10f;
     [SerializeField] public PromisePay promisePay;
+    private float BonusSpace = 0f;
     private Client client = null;
 
     public float getTflops(){ return Tflops;}
@@ -32,8 +32,8 @@ public class TaskImplement : Task
 
     public MiniGameTechnologyAreaGroup getTechnologyAreaGroup() { return technologyGroup; }
     public Client GetClient(){ return client; }
-    public float getSpace(){ return Space;}
-    public void setSpace(float Space){ this.Space = Space; }
+    public float getSpace(){ return Space + BonusSpace;}
+    public void IncrementSpace(float Space){ BonusSpace = Space; }
     
     virtual public Notification Launch(MonoBehaviour anchor)
     {
@@ -44,5 +44,22 @@ public class TaskImplement : Task
         noti.setTask(this);
         noti.Show();
         return noti;
+    }
+
+    public Task clone()
+    {
+        return new TaskImplement
+        {
+            Tflops = this.Tflops,
+            Name = this.Name,
+            Difficulty = this.Difficulty,
+            taskDescription = this.taskDescription,
+            technologyGroup = this.technologyGroup,
+            miniGameType = this.miniGameType,
+            Space = this.Space,
+            promisePay = this.promisePay,
+            BonusSpace = this.BonusSpace,
+            client = this.client
+        };
     }
 }
