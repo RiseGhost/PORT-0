@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [ExecuteAlways]
 public class CannonMechanic : MonoBehaviour
@@ -17,6 +18,7 @@ public class CannonMechanic : MonoBehaviour
     [SerializeField] private Part middlePart, BumBum;
     [SerializeField] private Transform shotPoint;
     [SerializeField] private CannonBullet bullet;
+    [SerializeField] private AudioClip shot;
     private float lastShotTime = -Mathf.Infinity;
 
 #if UNITY_EDITOR
@@ -43,6 +45,15 @@ public class CannonMechanic : MonoBehaviour
     public void Shot()
     {
         if (Time.time - lastShotTime < ShotInterval) return;
+        if (shot != null)
+        {
+            SoundServer soundServer = GameObject.FindFirstObjectByType<SoundServer>();
+            if (soundServer != null)
+            {
+                AudioMixer mixer = soundServer.GetAudioMixer();
+                soundServer.Play(shot,mixer.FindMatchingGroups("Cannon Shot")[0]);
+            }
+        }
         if (_animation != null)
         {
             _animation.SetTrigger("Fire");

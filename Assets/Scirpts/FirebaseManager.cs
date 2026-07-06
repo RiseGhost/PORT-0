@@ -120,6 +120,7 @@ public class PlayerDataFirebase
     public string LastConnection;
     public string GameVersion;
     public string OperatingSystem;
+    public string Name = "Ghost";
     public float TimeBuyServer = 0;
     public List<float> ServerWatts = new List<float>();
     public List<QuestTime> TimeByQuest = new List<QuestTime>();
