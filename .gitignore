@@ -16,6 +16,8 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /Assets/Firebase/
+Builds.zip
+*.zip
 Build Linux/
 *.log
 

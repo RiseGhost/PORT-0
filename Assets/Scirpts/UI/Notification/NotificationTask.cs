@@ -24,6 +24,7 @@ public class NotificationTask : NotificationOkCancel
     public override void Destroy()
     {
         if (this.Cancel.value >= 95f) TaskServer.Lock = false;
+        TaskServer.Lock = false;
         base.Destroy();
     }
 }

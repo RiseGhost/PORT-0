@@ -43,6 +43,7 @@ public class TaskImplement : Task
         if (client != null) this.client = client;
         noti.setTask(this);
         noti.Show();
+        TaskServer.Lock = true;
         return noti;
     }
 
