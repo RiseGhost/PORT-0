@@ -1,0 +1,71 @@
+{
+  "jogadores": {
+    "fZ4Fbq98UEQuQ1wMFAICN1gzmKg2": {
+      "GameVersion": "0.1.5",
+      "LastConnection": "07/07/2026 00:16:07",
+      "Name": "Pedro",
+      "OperatingSystem": "WindowsPlayer",
+      "ServerWatts": [
+        312,
+        635
+      ],
+      "TimeBuyServer": 14.59000015258789,
+      "TimeByQuest": [
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 27.670000076293945
+        },
+        {
+          "technology": [
+            "NodeJS",
+            "Nginx"
+          ],
+          "time": 35.77000045776367
+        },
+        {
+          "technology": [
+            "MySQL"
+          ],
+          "time": 37.380001068115234
+        }
+      ],
+      "TimeToDestroyEnemys": 45.19830322265625,
+      "TotalTime": 436.8117370605469
+    },
+    "Ifu622UuTNNVap2oNEV5OAXHHKk2": {
+      "GameVersion": "0.1.5",
+      "LastConnection": "08/07/2026 16:03:34",
+      "Name": "Gui",
+      "OperatingSystem": "WindowsPlayer",
+      "ServerWatts": [
+        210,
+        605
+      ],
+      "TimeBuyServer": 113.62000274658203,
+      "TimeByQuest": [
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 108.18000030517578
+        },
+        {
+          "technology": [
+            "MySQL"
+          ],
+          "time": 30.649999618530273
+        },
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 29.579999923706055
+        }
+      ],
+      "TimeToDestroyEnemys": 63.55078125,
+      "TotalTime": 1655.357666015625
+    }
+  }
+}
