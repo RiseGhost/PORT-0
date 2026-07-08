@@ -41,11 +41,11 @@ public class CannonController : MonoBehaviour
     {
         if (PlayerController.Lock) return;
         EventSystem eventSystem = EventSystem.current;
-        if (Keyboard.current[activeKey].wasPressedThisFrame && (eventSystem == null || eventSystem.currentSelectedGameObject == null))
+        /*if (Keyboard.current[activeKey].wasPressedThisFrame && (eventSystem == null || eventSystem.currentSelectedGameObject == null))
         {
             if (!inCombat) ActiveCombatMode();
             else DeactiveCombatMode();
-        }
+        }*/
         if (!inCombat) return;
         horizontal += action.ReadValue<Vector2>().x / 4;
         vertical += action.ReadValue<Vector2>().y / 4;
