@@ -70,7 +70,7 @@
     "F8QXQjdkYYarH1a1SRANg79U2f62": {
       "GameVersion": "0.1.5",
       "LastConnection": "10/07/2026 16:04:26",
-      "Name": "André",
+      "Name": "André Fazenda",
       "OperatingSystem": "WindowsPlayer",
       "ServerWatts": [
         675,
@@ -99,6 +99,54 @@
       ],
       "TimeToDestroyEnemys": 36.564483642578125,
       "TotalTime": 472.62811279296875
+    },
+    "Error_Miguel": {
+      "GameVersion": "0.1.5",
+      "LastConnection": "12/07/2026 14:51:57",
+      "Name": "Miguel Fazenda",
+      "OperatingSystem": "WindowsPlayer",
+      "ServerWatts": [
+        312,
+        312,
+        240,
+        235
+      ],
+      "TimeBuyServer": 17.360000610351562,
+      "TimeByQuest": [
+        {
+          "technology": [
+            "Postfix"
+          ],
+          "time": 110.62000274658203
+        },
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 33.06999969482422
+        },
+        {
+          "technology": [
+            "NodeJS",
+            "Nginx"
+          ],
+          "time": 45.81999969482422
+        },
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 30.06999969482422
+        },
+        {
+          "technology": [
+            "Postfix"
+          ],
+          "time": 35.75
+        }
+      ],
+      "TimeToDestroyEnemys": 22.813720703125,
+      "TotalTime": 1297.4486083984375
     }
   }
 }
