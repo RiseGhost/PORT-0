@@ -148,5 +148,45 @@
       "TimeToDestroyEnemys": 22.813720703125,
       "TotalTime": 1297.4486083984375
     }
+  },
+  "jogadores": {
+    "xZhN0Ok91mayrxKKfL4wORZNHkA3": {
+      "GameVersion": "0.1.5",
+      "LastConnection": "13/07/2026 14:36:05",
+      "Name": "Luís Alves",
+      "OperatingSystem": "WindowsPlayer",
+      "ServerWatts": [
+        205
+      ],
+      "TimeBuyServer": 33.66999816894531,
+      "TimeByQuest": [
+        {
+          "technology": [
+            "Apache"
+          ],
+          "time": 27.68000030517578
+        },
+        {
+          "technology": [
+            "NodeJS"
+          ],
+          "time": 34.52000045776367
+        },
+        {
+          "technology": [
+            "Postfix"
+          ],
+          "time": 40.4900016784668
+        },
+        {
+          "technology": [
+            "MySQL"
+          ],
+          "time": 30.760000228881836
+        }
+      ],
+      "TimeToDestroyEnemys": 69.62161254882812,
+      "TotalTime": 492.2874450683594
+    }
   }
 }
