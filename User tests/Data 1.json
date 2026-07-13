@@ -149,44 +149,74 @@
       "TotalTime": 1297.4486083984375
     }
   },
-  "jogadores": {
-    "xZhN0Ok91mayrxKKfL4wORZNHkA3": {
-      "GameVersion": "0.1.5",
-      "LastConnection": "13/07/2026 14:36:05",
-      "Name": "Luís Alves",
-      "OperatingSystem": "WindowsPlayer",
-      "ServerWatts": [
-        205
-      ],
-      "TimeBuyServer": 33.66999816894531,
-      "TimeByQuest": [
-        {
-          "technology": [
-            "Apache"
-          ],
-          "time": 27.68000030517578
-        },
-        {
-          "technology": [
-            "NodeJS"
-          ],
-          "time": 34.52000045776367
-        },
-        {
-          "technology": [
-            "Postfix"
-          ],
-          "time": 40.4900016784668
-        },
-        {
-          "technology": [
-            "MySQL"
-          ],
-          "time": 30.760000228881836
-        }
-      ],
-      "TimeToDestroyEnemys": 69.62161254882812,
-      "TotalTime": 492.2874450683594
-    }
+  "xZhN0Ok91mayrxKKfL4wORZNHkA3": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "13/07/2026 14:36:05",
+    "Name": "Luís Alves",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      205
+    ],
+    "TimeBuyServer": 33.66999816894531,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "Apache"
+        ],
+        "time": 27.68000030517578
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 34.52000045776367
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 40.4900016784668
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 30.760000228881836
+      }
+    ],
+    "TimeToDestroyEnemys": 69.62161254882812,
+    "TotalTime": 492.2874450683594
+  },"xZhN0Ok91mayrxKKfL4wORZNHkA3": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "13/07/2026 16:28:26",
+    "Name": "Joao Pedro F",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      625,
+      240
+    ],
+    "TimeBuyServer": 280.95001220703125,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 79.33000183105469
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 48.75
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 49.13999938964844
+      }
+    ],
+    "TimeToDestroyEnemys": 70.05712890625,
+    "TotalTime": 1352.1865234375
   }
 }
