@@ -6,6 +6,7 @@ public class CPUPage : UIPages
     [SerializeField] private GROUP_CPUS_Mark_Widget Mark_Widget;
     [SerializeField] private GROUP_CPUS_Widget CPU_WIDGET;
     [SerializeField] private Animator TutorialAnimator;
+    [SerializeField] private GameObject CPU_WARRING;
     private CPUArchitectStatus architectStatus;
     private CPUMarkStatus markStatus;
     private ProcessorStatus processorStatus;
@@ -50,6 +51,8 @@ public class CPUPage : UIPages
             isFirstTime = false;
             PlayerPrefs.SetString("CPUPage_Tutorial", "No");
         }
+
+        if (CPU_WARRING != null) CPU_WARRING.SetActive(CPU_WIDGET.getWidget().transform.childCount == 0);
     }
 
     public ProcessorStatus getProcessorStatus() { return CPU_WIDGET.getSelect(); }

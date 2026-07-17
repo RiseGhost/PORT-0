@@ -109,18 +109,21 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         serverStatus.disks = diskPage.getDisksStatuses();
         serverStatus.os = ospage.getGROUP_OS_Widget().getSelect().GetValue();
         Server server = new Server(serverStatus);
-        FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
-        PlayerDataFirebase data = await firebase.getPlayerData(firebase.getUID());
-        if (!PlayerPrefs.HasKey(Player_FirstTime_BuyServer))
+        try
         {
-            PlayerPrefs.SetString(Player_FirstTime_BuyServer,"Completed");
-            PlayerPrefs.Save();
-            data.TimeBuyServer = (float) Math.Round(Time.time - StartTime,2);
-        }
-        var listWatts = data.ServerWatts;
-        listWatts.Add(server.serverStatus.getWatts());
-        data.ServerWatts = listWatts;
-        await firebase.UpdateData(firebase.getUID(),data);
+            FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
+            PlayerDataFirebase data = await firebase.getPlayerData(firebase.getUID());
+            if (!PlayerPrefs.HasKey(Player_FirstTime_BuyServer))
+            {
+                PlayerPrefs.SetString(Player_FirstTime_BuyServer,"Completed");
+                PlayerPrefs.Save();
+                data.TimeBuyServer = (float) Math.Round(Time.time - StartTime,2);
+            }
+            var listWatts = data.ServerWatts;
+            listWatts.Add(server.serverStatus.getWatts());
+            data.ServerWatts = listWatts;
+            await firebase.UpdateData(firebase.getUID(),data);
+        } catch(Exception e){}
         Close();
     }
 
