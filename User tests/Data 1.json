@@ -250,5 +250,38 @@
     ],
     "TimeToDestroyEnemys": 97.31596374511719,
     "TotalTime": 396
+  }, "q7eaVy2Z8JNyU6TdCEeyP9Jhu7v1": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "19/07/2026 01:50:46",
+    "Name": "Ruben Alves",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      575,
+      600
+    ],
+    "TimeBuyServer": 26.31999969482422,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 72.8499984741211
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 44.08000183105469
+      },
+      {
+        "technology": [
+          "NodeJS",
+          "Nginx"
+        ],
+        "time": 45.880001068115234
+      }
+    ],
+    "TimeToDestroyEnemys": 88.72607421875,
+    "TotalTime": 816.1566772460938
   }
 }
