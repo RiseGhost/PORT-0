@@ -283,5 +283,37 @@
     ],
     "TimeToDestroyEnemys": 88.72607421875,
     "TotalTime": 816.1566772460938
+  }, "wXuE4EeAvdaiHGzic05V4BLz2x02": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "20/07/2026 15:59:47",
+    "Name": "André Filipe Fonseca Pais",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      630
+    ],
+    "TimeBuyServer": 113.51000213623047,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 291.3500061035156
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 28.56999969482422
+      },
+      {
+        "technology": [
+          "NodeJS",
+          "Nginx"
+        ],
+        "time": 64.18000030517578
+      }
+    ],
+    "TimeToDestroyEnemys": 59.623779296875,
+    "TotalTime": 1021.37939453125
   }
 }
