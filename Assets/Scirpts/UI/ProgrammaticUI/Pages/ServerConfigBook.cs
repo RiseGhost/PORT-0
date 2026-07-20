@@ -109,6 +109,11 @@ public class ServerConfigBook : MonoBehaviour, UIBook
         serverStatus.disks = diskPage.getDisksStatuses();
         serverStatus.os = ospage.getGROUP_OS_Widget().getSelect().GetValue();
         Server server = new Server(serverStatus);
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            Close();
+            return;
+        }
         try
         {
             FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
@@ -123,7 +128,7 @@ public class ServerConfigBook : MonoBehaviour, UIBook
             listWatts.Add(server.serverStatus.getWatts());
             data.ServerWatts = listWatts;
             await firebase.UpdateData(firebase.getUID(),data);
-        } catch(Exception e){}
+        } catch(Exception e){Close();}
         Close();
     }
 
