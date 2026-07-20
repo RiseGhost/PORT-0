@@ -1,0 +1,58 @@
+Pedro:
+- Animação de intro muito alta
+- Save de Som
+- Dar block ao portátil no tutorial
+
+- Câmara do cannon, poder ter melhorias e auxilio de mira
+
+- Falta de feedback quando acabam os commandos
+
+- Investigar a loja
+
+(Nota)
+
+Gui:
+
+- Camera efeito de clamp muito agressivo, pois dar switch quando o jogador move o rato contro o limite.
+- Frist mal escrito na tela de tutorial, IMB mal escrito será IBM
+- Collider no trash, com rigibody
+- Colocar uma porta para impider o jogador de ir para a área 2º
+- Cor de fundo do server floting UI para tab;
+- Hostname limited max char;
+- Melhorar o texto do notificiotion popup, para deixar mais claro
+- Texto full ingles
+- Melhorar BigPop de task com separaçºao entre company name | contry | Type (Comercial)
+- Jhon
+
+André:
+- Botões de menu com feedback sonoro
+- ESC para voltar a trás no menu
+- bug para telas gigantes
+- cor de threads da loja de shop
+
+Douglas:
+- Dar distância da câmara
+- Fazer com o mouse
+- Ter mais conteúdo
+- Adicionar um combo nas palavras
+- 1ª pessoa
+- Ter um minigame de instalação de SO
+- Melhorar os comandos do canhão
+- Ter mais variedade de maldware, tipo Boss, (Vá indo perdendo espaço no servidor) ...
+
+André Games:
+- Falta Introdução
+- Direcionar o jogador
+- Deixar o press TAB do install com mais destaque
+- Colocar Info de Tab para aceitar e X para recursar nas notificações
+- Precisas de tutorial
+- Deixar claro quando o jogador pode ou não usar o rato
+
+Ruben Alves:
+- Editar o hardware que já existe
+- Não esperar por tudo
+
+Bugs:
+- Loja de laja, (possivelmente firebase don't have crash)
+- Acabar de traduzir os
+- Falta de feeback na loja
