@@ -67,14 +67,14 @@ public class PlayerController : MonoBehaviour
         if (Lock) return;
         if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != null)
             return;
-        if (Keyboard.current[Key.H].wasPressedThisFrame)
+        /*if (Keyboard.current[Key.H].wasPressedThisFrame)
         {
             StorageManager.DeletedStorage();
             PlayerPrefs.DeleteAll();
             MoneyBank.Reset();
             BankAccount.Reset(Application.persistentDataPath);
             NotificationServer.AddNotification(new NotificationDefault("Game Save System","All storage entities are deleted."));
-        }
+        }*/
         if (CreateServerBook != null && Keyboard.current[Key.F].wasPressedThisFrame && currentServerBook == null)
         {
             currentServerBook = Instantiate(CreateServerBook.getGameObject(),Vector3.zero,Quaternion.identity).GetComponent<ServerConfigBook>();
