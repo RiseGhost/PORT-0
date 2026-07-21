@@ -77,7 +77,7 @@ public class WordCard
         root.Add(visualElement);
     }
 
-    public bool isOver() { return root.style.top.value.value > Screen.height - 220 - root.style.height.value.value; }
+    public bool isOver() { return root.style.top.value.value > 1080 - 220 - root.style.height.value.value; }
 
     public bool isCompesed() { return offsetDis > 0; }
 

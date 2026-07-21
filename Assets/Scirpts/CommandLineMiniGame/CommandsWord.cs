@@ -134,7 +134,7 @@ public class CommandWords
         VisualElement wordUI = UIWordsTemplate.CloneTree();
 
         wordUI.style.position = Position.Absolute;
-        wordUI.style.left = UnityEngine.Random.Range(Screen.width * (spawnZone.minX / 100f), Screen.width * (spawnZone.maxX / 100f));
+        wordUI.style.left = UnityEngine.Random.Range(1920 * (spawnZone.minX / 100f), 1920 * (spawnZone.maxX / 100f));
         wordUI.style.top = -150f;
 
         if (spawnWordsElement == null) father_root.Add(wordUI);

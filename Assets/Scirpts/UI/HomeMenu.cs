@@ -16,6 +16,11 @@ public class HomeMenu : MonoBehaviour
     [SerializeField] private MenuOption[] MenuOptions;
     [SerializeField] private Key ExitKey = Key.Q;
 
+    void Start()
+    {
+        GameObject.FindFirstObjectByType<FirebaseManager>().Play();
+    }
+
     void Update()
     {
         if (Keyboard.current[ExitKey].wasPressedThisFrame)
