@@ -5,20 +5,21 @@ using UnityEngine;
 
 public class AttackServer : MonoBehaviour
 {
-    private Coroutine coroutine;
+    private static bool AttackLaunch = false;
     private float min_task_to_attack = 3;
     private EmailBox emailBox = null;
     public static bool Lock = false;
 
     void Awake()
     {
+        AttackLaunch = false;
         Debug.Log("Attack Server UP ⚔️");
         name = "Attack Server";
         Lock = false;
     }
 
     void Start(){
-        coroutine = StartCoroutine(run());
+        StartCoroutine(run());
     }
 
     private IEnumerator run()
@@ -36,6 +37,7 @@ public class AttackServer : MonoBehaviour
                         Debug.Log("Attack System -> DDos Email send, with success");
                         TaskServer.Lock = true;
                         Lock = true;
+                        AttackLaunch = true;
                     } catch(Exception e){ Debug.LogError("Attack System -> " + e.Message); }
                 }
                 else Debug.Log("Attack System -> Don't exist email!");
@@ -48,4 +50,9 @@ public class AttackServer : MonoBehaviour
         }
     }
 
+    public static bool AttackIsLaunch() { return AttackLaunch; }
+    public static void AttackFinish()
+    {
+        AttackLaunch = false;
+    }
 }

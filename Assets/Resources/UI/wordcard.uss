@@ -1,1 +1,9 @@
-.highlight { transform: scale(1.8); transition: transform 150ms ease-in-out; }
+.highlight { 
+    transform: scale(1.8); 
+    transition: transform 150ms ease-in-out;
+
+}
+
+#Progress .unity-progress-bar__container{
+    background: #0000006b
+}

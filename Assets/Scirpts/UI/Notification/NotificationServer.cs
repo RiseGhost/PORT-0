@@ -98,6 +98,12 @@ public class NotificationServer : MonoBehaviour
         notificationQue.ResetAll();
     }
 
+    public static Notification? CurrentTopNotification()
+    {
+        if (notificationQue.top.Count == 0) return null;
+        else return notificationQue.top.First();
+    }
+
     private VisualElement GetVisualElementZone(NotificationsZone zone)
     {
         switch (zone)

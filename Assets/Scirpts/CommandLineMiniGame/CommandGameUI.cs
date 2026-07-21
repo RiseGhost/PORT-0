@@ -105,7 +105,7 @@ public class CommandGameUI : MonoBehaviour
     {
         while (!commandWord.CompleteLevel())
         {
-            commandWord.SpawnWord();
+            if (commandWord.WordCardInGame() < 4) commandWord.SpawnWord();
             yield return new WaitForSeconds(2f);
         }
         //Level finished

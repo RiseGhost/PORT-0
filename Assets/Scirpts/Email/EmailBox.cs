@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EmailBox : MonoBehaviour
@@ -13,4 +14,5 @@ public class EmailBox : MonoBehaviour
             NotificationServer.AddNotification(new NotificationDefault("New email", "Go to your PC to read"));
         }
     }
+    public bool ExistNotReadEmail() { return emails.Select((x) => x.read).Contains(false); }
 }

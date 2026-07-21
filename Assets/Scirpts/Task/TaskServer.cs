@@ -39,7 +39,7 @@ public class TaskServer
 
     public TaskServer(TaskDifficulty difficulty,MonoBehaviour anchor)
     {
-        if (!PowerSupply.Exist_Energy() || PowerSupply.PowerOut_Will_Exit())
+        if (!PowerSupply.Exist_Energy() || AttackServer.AttackIsLaunch())
         {
             Lock = true;
             if (Last_Notification != null)

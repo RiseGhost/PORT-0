@@ -1,18 +1,18 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Resources/UI/Notification/Interactable/StyleProgressBar.uss?fileID=7433441132597879392&amp;guid=6322b19d810269840be15cfe2cf72c72&amp;type=3#StyleProgressBar" />
+    <Style src="project://database/Assets/Resources/UI/Notification/Interactable/StyleProgressBar.uss?fileID=7433441132597879392&amp;guid=6322b19d810269840be15cfe2cf72c72&amp;type=3#StyleProgressBar"/>
     <ui:VisualElement name="VisualElement" style="flex-grow: 1; width: auto; height: auto; min-height: auto; max-height: none; background-color: rgb(46, 46, 46); min-width: auto; max-width: none; left: 0; right: 0; bottom: 0; top: 0; align-items: center; justify-content: center; padding-left: 15px; padding-right: 15px; padding-bottom: 5px; padding-top: 5px; position: relative;">
         <ui:VisualElement style="flex-grow: 1; justify-content: center;">
-            <ui:Label text="Tittle" name="Tittle" style="font-size: 25px; -unity-font-style: bold; color: rgb(219, 219, 219);" />
-            <ui:Label text="Description" name="Description" style="font-size: 20px; -unity-font-style: bold; color: rgba(219, 219, 219, 0.55);" />
+            <ui:Label text="Tittle" name="Tittle" style="font-size: 25px; -unity-font-style: bold; color: rgb(219, 219, 219);"/>
+            <ui:Label text="Description" name="Description" style="font-size: 20px; -unity-font-style: bold; color: rgba(219, 219, 219, 0.55);"/>
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: 1; justify-content: center; align-self: center; align-items: center; align-content: flex-start; flex-direction: row; width: 100%;">
-            <ui:VisualElement style="flex-grow: 1; width: 110px; justify-content: center; align-self: center; align-content: center; align-items: center;">
-                <ui:ProgressBar value="100" name="cancelBar" class="mybar cancel" style="width: 110px; height: 60px; position: relative;" />
-                <ui:Label text="F" name="CancelKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;" />
+            <ui:VisualElement style="flex-grow: 1; width: 160px; justify-content: center; align-self: center; align-content: center; align-items: center;">
+                <ui:ProgressBar value="100" name="cancelBar" class="mybar cancel" style="width: 160px; height: 60px; position: relative;"/>
+                <ui:Label text="F" name="CancelKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;"/>
             </ui:VisualElement>
-            <ui:VisualElement style="flex-grow: 1; width: 110px; justify-content: center; align-self: center; align-content: center; align-items: center;">
-                <ui:ProgressBar value="100" name="okBar" class="mybar" style="width: 110px; height: 60px; position: relative;" />
-                <ui:Label text="F" name="AcceptKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;" />
+            <ui:VisualElement style="flex-grow: 1; width: 160px; justify-content: center; align-self: center; align-content: center; align-items: center;">
+                <ui:ProgressBar value="100" name="okBar" class="mybar" style="width: 160px; height: 60px; position: relative;"/>
+                <ui:Label text="F" name="AcceptKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

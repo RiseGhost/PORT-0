@@ -26,8 +26,8 @@ public class NotificationOkCancel : NotificationKeyInteractable
         this.Cancel = root.Q<ProgressBar>("cancelBar");
         Tittle.text = tittle;
         Description.text = description;
-        LBOK.text = Ok.ToString();
-        LBCancel.text = Cancel.ToString();
+        LBOK.text = Ok.ToString() + " - Accept";
+        LBCancel.text = Cancel.ToString() + " - Reject";
         OkPress = Ok;
         CancelPress = Cancel;
         this.Ok.value = 0f;

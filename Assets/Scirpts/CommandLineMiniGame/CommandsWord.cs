@@ -148,6 +148,8 @@ public class CommandWords
             newCard.SetHighlighted(true);
     }
 
+    public int WordCardInGame(){ return CardsMove.Count; }
+
     public void MoveCards(float deltaTime, string lastword)
     {
         if (CardsMove.Count() == 0) return;

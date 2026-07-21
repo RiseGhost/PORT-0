@@ -13,6 +13,7 @@ public class WordCard
     private float top, left;
     private VisualElement root;
     private bool isDestroy = false;
+    private VisualElement WordBackground;
     private VisualElement content;
 
     // campos para escala/original size
@@ -26,6 +27,7 @@ public class WordCard
         this.root = root;
         this.word = word.ToLower();
         this.speed = speed;
+        WordBackground = root.Q<VisualElement>("wordBackground");
         this.root.Q<Label>("word").text = this.word;
         this.score = score;
         content = root.Q<VisualElement>("Content");
@@ -92,6 +94,7 @@ public class WordCard
 
         if (on) {
             root.style.scale = new Scale(new Vector2(1.3f, 1.3f));
+            if (WordBackground != null) WordBackground.style.unityBackgroundImageTintColor = Color.white;
         } else {
             root.style.scale = new Scale(Vector2.one);
         }

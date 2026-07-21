@@ -69,6 +69,7 @@ public class CannonController : MonoBehaviour
 
     public async void DeactiveCombatMode()
     {
+        AttackServer.AttackFinish();
         FirebaseManager firebase = GameObject.FindFirstObjectByType<FirebaseManager>();
         if (firebase != null)
         {
