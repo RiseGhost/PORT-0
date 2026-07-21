@@ -52,6 +52,21 @@ Ruben Alves:
 - Editar o hardware que já existe
 - Não esperar por tudo
 
+Amadeu:
+especificar melhor a ccena de boost de som
+Não precebeste que o jogo começou
+Falta instrução de começar a andar
+
+Press to hold
+
+Server select task, tentou usar tab
+Não fica claro que Q de quit é para acabar
+O jogador não se lembra como abrir a shop
+
+Aviso no canto inferior
+trocar PC para laptop na notificação de new email
+Feedback de inimigos a tomarem dano
+
 Bugs:
 - Loja de laja, (possivelmente firebase don't have crash)
 - Acabar de traduzir os

@@ -315,5 +315,37 @@
     ],
     "TimeToDestroyEnemys": 59.623779296875,
     "TotalTime": 1021.37939453125
+  }, "wZjj4EeAvdaiHGzic05V4BLz2x02": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "21/07/2026 22:08:47",
+    "Name": "Lavovski",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      630
+    ],
+    "TimeBuyServer": 79.65,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 104.3500061035156
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 28.56999969482422
+      },
+      {
+        "technology": [
+          "NodeJS",
+          "Nginx"
+        ],
+        "time": 64.18000030517578
+      }
+    ],
+    "TimeToDestroyEnemys": 59.623779296875,
+    "TotalTime": 1021.37939453125
   }
 }
