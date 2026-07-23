@@ -249,7 +249,7 @@
       }
     ],
     "TimeToDestroyEnemys": 97.31596374511719,
-    "TotalTime": 396
+    "TotalTime": 396.33126374576519
   }, "q7eaVy2Z8JNyU6TdCEeyP9Jhu7v1": {
     "GameVersion": "0.1.5",
     "LastConnection": "19/07/2026 01:50:46",
@@ -347,5 +347,70 @@
     ],
     "TimeToDestroyEnemys": 59.623779296875,
     "TotalTime": 1021.37939453125
+  }, "13O3ePRC2mgl9knK8nLfJIK9vvA3": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "23/07/2026 22:15:05",
+    "Name": "Pipoca",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      215,
+      295
+    ],
+    "TimeBuyServer": 190.2100067138672,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 161.32000732421875
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 33.130001068115234
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 31.09000015258789
+      }
+    ],
+    "TimeToDestroyEnemys": 114.4383544921875,
+    "TotalTime": 1361.365966796875
+  }, "IJPpaZYoEtfdei4hbHAtlYnbcZD3": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "23/07/2026 22:50:36",
+    "Name": "Ghost",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      635,
+      635
+    ],
+    "TimeBuyServer": 175.05999755859375,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS",
+          "Nginx"
+        ],
+        "time": 98.7300033569336
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 48.5099983215332
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 60.58000183105469
+      }
+    ],
+    "TimeToDestroyEnemys": 62.7509765625,
+    "TotalTime": 1626.03173828125
   }
 }

@@ -67,7 +67,25 @@ Aviso no canto inferior
 trocar PC para laptop na notificação de new email
 Feedback de inimigos a tomarem dano
 
+Sara:
+Dificuldade em entender o que peça fazem
+Histórico de commandos visivel, mas tem pouco destaque.
+A descrição poderia ser mais desenvolvida
+Não se lembra como comprar um novo servidor
+Usar outra tecla ou então a notificações perderem prioridade
+Dois PC confedem um pouco.
+Precebeu que era para escrever as palavras
+
+Arthur:
+O histório não está visivel
+Não se lembra como abrir a shop
+Não se lembra do pc
+A aceitação das tarefas não está claro
+Feedback de informação
+Achou o jogo bonito, achou o canhão bonito, mas a câmara pouco confusa.
+
 Bugs:
+- Notificação de task em cima tela de seleção do servidor
 - Loja de laja, (possivelmente firebase don't have crash)
 - Acabar de traduzir os
 - Falta de feeback na loja
