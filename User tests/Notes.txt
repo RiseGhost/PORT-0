@@ -84,6 +84,12 @@ A aceitação das tarefas não está claro
 Feedback de informação
 Achou o jogo bonito, achou o canhão bonito, mas a câmara pouco confusa.
 
+Tiago 3º ano:
+O menu de história precisa de um pouco mais de destaque
+Não se lembra como abrir a loja
+talvez usar o ESC para votar a trás
+Bug: câmare não gira, perda de foca na tela de options.
+
 Bugs:
 - Notificação de task em cima tela de seleção do servidor
 - Loja de laja, (possivelmente firebase don't have crash)
