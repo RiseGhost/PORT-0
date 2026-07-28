@@ -444,5 +444,36 @@
     ],
     "TimeToDestroyEnemys": 95.431884765625,
     "TotalTime": 1148.4232177734375
+  }, "LAD1zlIUiYNfuVejAblC32rZc4d2": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "28/07/2026 00:33:23",
+    "Name": "Rafael Durães",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      310
+    ],
+    "TimeBuyServer": 140.13999938964844,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 112.4800033569336
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 75.0999984741211
+      },
+      {
+        "technology": [
+          "Apache"
+        ],
+        "time": 31.06999969482422
+      }
+    ],
+    "TimeToDestroyEnemys": 49.31097412109375,
+    "TotalTime": 1014.3861083984375
   }
 }

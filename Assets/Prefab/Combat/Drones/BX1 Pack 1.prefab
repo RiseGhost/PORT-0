@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &4125222770288165734
 Animator:
@@ -259,14 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 8070989545961735027}
   health: 10
@@ -407,7 +399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &2265988918067085719
 Animator:
@@ -691,7 +682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &5478956070310208756
 Animator:
@@ -762,15 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 2538572411708778882}
   health: 10
@@ -911,7 +893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &1422833136350174818
 Animator:
@@ -982,12 +963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 861244237717330343}
   health: 10
@@ -1165,7 +1141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &649450370473159891
 Animator:
@@ -1449,7 +1424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497f7d4daa357e41a522af34f2056e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DroneUILook
-  target: {fileID: 0}
   LastShownTime: 0
 --- !u!95 &4593448982372594474
 Animator:
@@ -1592,14 +1566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 6524321979665002047}
   health: 10
@@ -1671,17 +1638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 7693266724564757035}
   health: 10
@@ -1753,14 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c4826429534b4aa0c9bf589236efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Drone
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Points: 3
   speed: 5
   uiLook: {fileID: 2292255902086436293}
   health: 10
@@ -1876,12 +1826,53 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4367270522872367829}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4183872009385862905}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8541166500926820963}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5572129837181115117}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4015018479752383510}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 38737584760599342}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4423331101578320437}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3871897461426552416}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3492667395767125173}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
 --- !u!4 &24547214092073392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 566764102728523355}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &92517535282255632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5572129837181115117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92517535282255632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &800766773100978954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -1909,6 +1900,125 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1084355720919972403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4183872009385862905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084355720919972403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &3044677407989331300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3871897461426552416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3044677407989331300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &3324001687761281765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8541166500926820963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324001687761281765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &4621621046657951017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4015018479752383510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4621621046657951017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &5962050425957086666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3492667395767125173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962050425957086666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &6609572706257137101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &38737584760599342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609572706257137101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8089358533976581748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 566764102728523355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4423331101578320437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089358533976581748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1001 &1846828119978995026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2000,7 +2110,48 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5962621421077936164}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5414128145959243270}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2658501543561472809}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6338515886215836187}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1936266662919202388}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 709440054757725362}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8645630865844315034}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 225359153217947430}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2178892111314242554}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+--- !u!1 &1256692695876208954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5414128145959243270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256692695876208954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &1540276917050134531 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -2033,6 +2184,125 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 1846828119978995026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2248559159859553305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6338515886215836187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248559159859553305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &3485211605045613036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2658501543561472809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3485211605045613036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &3763902534142592621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &225359153217947430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3763902534142592621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &5027468308833476292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709440054757725362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027468308833476292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &5530906150964037315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2178892111314242554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530906150964037315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &6800302715166217760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1936266662919202388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800302715166217760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7944314743067350397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 1846828119978995026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8645630865844315034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944314743067350397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1001 &3284904372562915760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2124,7 +2394,65 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 858349216196932870}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6098058311711379805}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1035747927712265636}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9038182353615159871}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3024672397162546379}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2250073334440122980}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6783418564850657261}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8192199251958517624}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 328013984191025224}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+--- !u!1 &3098514765814415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8192199251958517624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3098514765814415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &318319618989067534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1035747927712265636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318319618989067534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &2402453584872492257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -2152,11 +2480,113 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2686318175069803992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6098058311711379805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2686318175069803992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!4 &3034557955988002395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 3284904372562915760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3099443946239080699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9038182353615159871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3099443946239080699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &6487702820485859743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6783418564850657261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487702820485859743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7667541328295283394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3024672397162546379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667541328295283394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8210683030306292262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2250073334440122980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8210683030306292262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8716341782873217569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3284904372562915760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &328013984191025224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716341782873217569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1001 &3371436348148114767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2248,7 +2678,65 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2659777479798650585}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6203751573059292807}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8750685319815148521}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8933100968923641230}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1659561997476256298}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3677861051862939785}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5850532512691636820}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4983433889006109227}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2347108603407658490}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+--- !u!1 &240078865135472240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4983433889006109227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240078865135472240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &519332740997945841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8750685319815148521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519332740997945841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &2452446044717864990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -2276,11 +2764,113 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2745036625514725671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6203751573059292807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745036625514725671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &2908344291666996228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8933100968923641230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908344291666996228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!4 &2973226791172833956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 3371436348148114767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6437648509588217184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5850532512691636820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437648509588217184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7581660813432380989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1659561997476256298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581660813432380989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8263499310653773529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3677861051862939785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263499310653773529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8910731171135327966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3371436348148114767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2347108603407658490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910731171135327966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1001 &3583814289597384992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2372,12 +2962,104 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3007020910032554621}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4949638521389428002}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5896203505132611910}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8581214540043731541}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9009984139287330728}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3820169153224024197}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9029650173879685187}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6787230826745381809}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 569197317682372550}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+--- !u!1 &1747661660962108830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5896203505132611910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747661660962108830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &2026924472201912863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6787230826745381809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026924472201912863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!4 &3906588344386498251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 3583814289597384992}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3974841033879322731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8581214540043731541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974841033879322731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &4138156190727187784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4949638521389428002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138156190727187784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &4430747954754024561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -2405,6 +3087,74 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &5053852777676714255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9029650173879685187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5053852777676714255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7267892458839286449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &569197317682372550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267892458839286449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7915115594249845430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3820169153224024197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915115594249845430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &8521517696154366546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 3583814289597384992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9009984139287330728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521517696154366546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1001 &4981683441973591353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2496,12 +3246,121 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3344870879848538399}
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5020496184414261031}
+    - targetCorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6108260749775782396}
+    - targetCorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6901614129155885011}
+    - targetCorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190846153419318041}
+    - targetCorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6432887830260017218}
+    - targetCorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2354508516627090466}
+    - targetCorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 159148841555613691}
+    - targetCorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8076388827560332133}
   m_SourcePrefab: {fileID: 100100000, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+--- !u!1 &206243760811558475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187802803209747314, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &190846153419318041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206243760811558475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &1171647316079613608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3071180390171350127, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8076388827560332133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171647316079613608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &1821170706986471087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6657560127643677590, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6432887830260017218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821170706986471087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &3656042165637121302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -603869065150105553, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2354508516627090466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656042165637121302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!4 &4803308695418739410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
   m_PrefabInstance: {fileID: 4981683441973591353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4879441795201250418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 474352163828386123, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6901614129155885011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879441795201250418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
 --- !u!1 &5324124901174067304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
@@ -2529,3 +3388,54 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &5616997575422679377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5020496184414261031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5616997575422679377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7547803968052139526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3286872407655050047, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &159148841555613691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7547803968052139526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink
+--- !u!1 &7844931544398102919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025492192847002814, guid: d29dba4bd664b1847a131eb5dbbf3620, type: 3}
+  m_PrefabInstance: {fileID: 4981683441973591353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6108260749775782396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7844931544398102919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b792ec8e69d7db409bea9b83af674ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyTakeBlink

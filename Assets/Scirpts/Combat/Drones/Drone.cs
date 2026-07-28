@@ -9,12 +9,14 @@ public class Drone : MonoBehaviour
     [SerializeField] private float health = 10f;
     private List<Transform> waypoints = new List<Transform>();
     private Transform currentWaypoint = null;
+    private EnemyTakeBlink[] Blinks;
 
     void Start()
     {
         WayPoints wayPoints = GameObject.FindAnyObjectByType<WayPoints>();
         if (wayPoints == null) return;
         this.waypoints = wayPoints.GetPoints(Points);
+        Blinks = GetComponentsInChildren<EnemyTakeBlink>();
     }
 
     void Update()
@@ -50,6 +52,13 @@ public class Drone : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        if (Blinks != null)
+        {
+            foreach (var b in Blinks)
+            {
+                b.Blink();
+            }
+        }
         health -= damage;
         if (health <= 0)
             Destroy(gameObject);
