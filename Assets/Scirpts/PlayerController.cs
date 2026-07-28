@@ -46,8 +46,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        Application.targetFrameRate = 0;
-        QualitySettings.vSyncCount = 0;
         taskCoroutine = StartCoroutine(teste());
     }
 

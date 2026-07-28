@@ -15,7 +15,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float sensitivity = 0.2f;
     [SerializeField] private InputAction scrollAction;
     [SerializeField] private float zoom_sensitivity = 5f;
-    [SerializeField] private float zoom = 6f;
+    [SerializeField] private float zoom = 8f;
+    [SerializeField] private Camera MainCamera;
     private Transform camTrans;
     private float yaw = 0f;
     private Vector3 FollowPos;
@@ -41,16 +42,12 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        if (Camera.main == null || Camera.main.gameObject.activeInHierarchy == false) return;
+        if (MainCamera == null || MainCamera.gameObject.activeInHierarchy == false) return;
         if (scrollAction == null) return;
         Vector2 scroll = scrollAction.ReadValue<Vector2>();
         zoom += scroll.y * Time.deltaTime * zoom_sensitivity;
-        GameObject teste = GameObject.FindGameObjectWithTag("Teste");
-        if (teste == null) return;
-        teste.GetComponent<TextMeshProUGUI>().text = scroll.ToString();
-        if (distance < min_zoom) zoom = min_zoom;
-        if (distance > max_zoom) zoom = max_zoom;
-        Camera.main.orthographicSize = zoom;
+        zoom = Mathf.Clamp(zoom, min_zoom, max_zoom);
+        MainCamera.orthographicSize = zoom;
     }
 
     void LateUpdate()
@@ -60,10 +57,10 @@ public class CameraFollow : MonoBehaviour
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
         // Atualiza apenas a rotação horizontal
         if (RotateCam)
-            yaw += mouseDelta.x * sensitivity;
+            yaw = Mathf.Clamp(yaw + mouseDelta.x * sensitivity * Time.deltaTime * 15f,-60,50);
 
         // Move suavemente a câmara
-        camTrans.parent.position = transform.position + Quaternion.Euler(0,Mathf.Clamp(yaw + 90,30,140),0) * new Vector3(-distance,distance * 0.7f,-distance);
+        camTrans.parent.position = transform.position + Quaternion.Euler(0,yaw + 90f,0) * new Vector3(-distance,distance * 0.7f,-distance);
         FollowPos = Vector3.Lerp(FollowPos,transform.position + Vector3.up * 3f,Time.deltaTime * followSpeed);
         camTrans.LookAt(FollowPos);
     }
