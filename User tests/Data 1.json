@@ -475,5 +475,63 @@
     ],
     "TimeToDestroyEnemys": 49.31097412109375,
     "TotalTime": 1014.3861083984375
+  }, "BwLmgqMzsEabKJVK6sBEu71xHBg1": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "30/07/2026 14:23:11",
+    "Name": "dialex_",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      680,
+      625
+    ],
+    "TimeBuyServer": 55.86000061035156,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "Apache"
+        ],
+        "time": 94.58000183105469
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 58.95000076293945
+      }
+    ],
+    "TimeToDestroyEnemys": 64.00603,
+    "TotalTime": -1.0000
+  }, "WDMlBBdryGOgQm5fDr1iYsjttM92": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "30/07/2026 15:23:55",
+    "Name": "Ghost",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      235,
+      367
+    ],
+    "TimeBuyServer": 92.06999969482422,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 78.56999969482422
+      },
+      {
+        "technology": [
+          "Apache"
+        ],
+        "time": 28.670000076293945
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 38.75
+      }
+    ],
+    "TimeToDestroyEnemys": 82.9168701171875,
+    "TotalTime": 1166.5496826171875
   }
 }

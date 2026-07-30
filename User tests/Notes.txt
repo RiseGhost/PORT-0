@@ -1,3 +1,5 @@
+A missão era chegar até ao 1º ataque DDos.
+
 Pedro:
 - Animação de intro muito alta
 - Save de Som
@@ -89,6 +91,25 @@ O menu de história precisa de um pouco mais de destaque
 Não se lembra como abrir a loja
 talvez usar o ESC para votar a trás
 Bug: câmare não gira, perda de foca na tela de options.
+
+Diago 1º ano Mst:
+- Teve dificuldades a preceber como funciona o mini game Word Rush
+- Parte de histórico de commando não está bem visivel. (Apelativo)
+- O Jogador fica com o olhar muito focado na área de jogo das palavras.
+- Exigue um contexto inicial (O que é um datacenter, e que são as peças)
+- A estética de menu conduz com o estilo do jogo, assim como a estética visual do cenário e presonagem.
+
+Mars:
+- Perdida no inicio, não preceber nos botões da shop
+- Não percebeu onde estava o servidor que comprou
+- Mapa grande
+- Usar TAB para tudo, o jogador pode ficar perdido
+- Precebeu de 1º sem ajuda o que era para fazer.
+- Letras no mini game de word rush estavam um pouco pequenas
+- Hold tab pode causar impressão, pois não é orgânico, clicar no PC é automático
+- Não reparou nos histórico, não ficou visivel, apelativo.
+- No inicio o jogo da palavras parecia um tetris liker ou um space invader.
+- Lembras-se da palavra "Apache" porque escreveu
 
 Bugs:
 - Notificação de task em cima tela de seleção do servidor
