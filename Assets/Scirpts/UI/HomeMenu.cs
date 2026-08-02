@@ -19,6 +19,8 @@ public class HomeMenu : MonoBehaviour
     void Start()
     {
         GameObject.FindFirstObjectByType<FirebaseManager>().Play();
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void Update()

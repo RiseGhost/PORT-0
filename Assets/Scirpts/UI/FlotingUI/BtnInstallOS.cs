@@ -29,8 +29,8 @@ public class BtnInstallOS : MonoBehaviour
 
     void FixedUpdate()
     {
-        var taskNotification = NotificationServer.CurrentTopNotification();
-        if (taskNotification is NotificationTask) return;
+        //var taskNotification = NotificationServer.CurrentTopNotification();
+        //if (taskNotification is NotificationTask) return;
         if (Keyboard.current[AcceptKey].isPressed && !PowerSupply.PowerOut_Will_Exit()) value += 0.5f * Time.deltaTime * 100f;
         else value -= 0.5f * Time.deltaTime * 150f;
         if (value > 100f) value = 100f;

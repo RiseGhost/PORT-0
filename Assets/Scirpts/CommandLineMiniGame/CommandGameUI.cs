@@ -97,6 +97,7 @@ public class CommandGameUI : MonoBehaviour
         {
             inputCommands.text += command + " ";
         }
+        if (inputCommands.text.Trim().Length == 0) inputCommands.text = "Write here...";
     }
 
     private void cleanInputs() { inputs.Clear(); inputs.Add(""); }

@@ -97,11 +97,16 @@ Bruno 2º Mst informática:
 - Ficou um pouco perdido a encontrar o notebook
 - Aumentar um pouco o tamanho da caixa onde se escreve (colocar um placeholder)
 
+Primo do ulti:
+- O menu de história precisa de um pouco mais de destaque
+- No servertask deve colocar uma explicação melhorada
+- Colocar um indicativo a dizer onde está o novo servidor
+
+Amigo do primo do ulti:
+- Colocar um indicativo a dizer onde está o novo servidor
+- O menu de história precisa de um pouco mais de destaque
+
 Eduardo 3º Mst Games:
 - Só teclado pelos menus, ou rato para tudo
 - Demorou um ponto a preceber que era para escrever
-- O histórico nao fica apelativo, não repara na existência
-
-Diago 1º ano Mst:
-- Teve dificuldades a preceber como funciona o mini game Word Rush
-- Parte de histórico de commando não est�
+- O histó

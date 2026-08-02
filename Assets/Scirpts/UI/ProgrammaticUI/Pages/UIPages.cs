@@ -28,6 +28,10 @@ public class UIPages : MonoBehaviour
                 soundServer.Play(clickSound,mixer.FindMatchingGroups("Effects")[0]);
             }
         }
+        float BankAmount = BankAccount.getCurrent(Application.persistentDataPath).amount;
+        ServerConfigBook configBook = (ServerConfigBook) book;
+        float ShopAmount = configBook.getPrice();
+        if (ShopAmount > BankAmount) return;
         book.nextPage();
     }
 

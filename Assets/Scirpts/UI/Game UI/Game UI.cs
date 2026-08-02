@@ -12,6 +12,7 @@ public class GameUI : MonoBehaviour
     {
         _emailBox = GameObject.FindFirstObjectByType<EmailBox>();
         if (EmailAlertContainer != null) EmailAlertContainer.SetActive(false);
+        BuyServerAlertContainer.SetActive(false);
     }
 
     void Update()

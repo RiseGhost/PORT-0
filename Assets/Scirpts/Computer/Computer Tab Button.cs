@@ -19,8 +19,8 @@ public class ComputerTabButton : MonoBehaviour
     void Update()
     {
         if (DesktopUI) return;
-        var taskNotification = NotificationServer.CurrentTopNotification();
-        if (taskNotification is NotificationTask) return;
+        //var taskNotification = NotificationServer.CurrentTopNotification();
+        //if (taskNotification is NotificationTask) return;
         if (Keyboard.current[Key.Tab].isPressed)
             _slider.value = Mathf.Clamp(_slider.value + speed * Time.deltaTime, 0f, _slider.maxValue);
         else
