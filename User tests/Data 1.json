@@ -507,5 +507,37 @@
     ],
     "TimeToDestroyEnemys": 73.322021484375,
     "TotalTime": 920.5007934570312
+  }, "iS2CwSgMpppJKfsMFAhfdUTePaM2": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "02/08/2026 18:12:52",
+    "Name": "Primo Ulti",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      345,
+      312
+    ],
+    "TimeBuyServer": 102.30999755859375,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 65.13999938964844
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 95.6500015258789
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 39.2400016784668
+      }
+    ],
+    "TimeToDestroyEnemys": 95.420166015625,
+    "TotalTime": 1178.9952392578125
   }
 }
