@@ -475,4 +475,37 @@
     ],
     "TimeToDestroyEnemys": 49.31097412109375,
     "TotalTime": 1014.3861083984375
-  }, "
+  }, "UgKyDRiptSR8uDDfKAxnSYiNjdJ2": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "02/08/2026 14:50:22",
+    "Name": "Eduardo",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      375,
+      240
+    ],
+    "TimeBuyServer": 131.6699981689453,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 55.7599983215332
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 60.58000183105469
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 35.560001373291016
+      }
+    ],
+    "TimeToDestroyEnemys": 73.322021484375,
+    "TotalTime": 920.5007934570312
+  }
+}

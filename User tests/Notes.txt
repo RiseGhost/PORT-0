@@ -97,6 +97,11 @@ Bruno 2º Mst informática:
 - Ficou um pouco perdido a encontrar o notebook
 - Aumentar um pouco o tamanho da caixa onde se escreve (colocar um placeholder)
 
+Eduardo 3º Mst Games:
+- Só teclado pelos menus, ou rato para tudo
+- Demorou um ponto a preceber que era para escrever
+- O histórico nao fica apelativo, não repara na existência
+
 Diago 1º ano Mst:
 - Teve dificuldades a preceber como funciona o mini game Word Rush
 - Parte de histórico de commando não est�
