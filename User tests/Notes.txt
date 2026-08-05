@@ -106,6 +106,12 @@ Amigo do primo do ulti:
 - Colocar um indicativo a dizer onde está o novo servidor
 - O menu de história precisa de um pouco mais de destaque
 
+Felipa:
+- Ficou um pouco perdida da shop. (Verefiar existir limite defenidos, tipo quantas task dá para fazer com o CPU x)
+- Não percebeu de imediato que tinha de instalar um SO no computer. (Ter melhor feedback que o servidor chegou)
+- O menu de história precisa de um pouco mais de destaque
+- Invert scroll commands
+
 Eduardo 3º Mst Games:
 - Só teclado pelos menus, ou rato para tudo
 - Demorou um ponto a preceber que era para escrever
