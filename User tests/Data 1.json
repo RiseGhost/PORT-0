@@ -598,5 +598,33 @@
     ],
     "TimeToDestroyEnemys": 112.840576171875,
     "TotalTime": 1775.59716796875
+  }, "rkr0Q8sH3McNTpZ73JYimMcN2yY2": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "05/08/2026 19:25:10",
+    "Name": "Ana amiga do bruno",
+    "OperatingSystem": "WindowsPlayer",
+    "TimeBuyServer": 46.68000030517578,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 36.77000045776367
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 45.08000183105469
+      },
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 29.780000686645508
+      }
+    ],
+    "TimeToDestroyEnemys": 90.17584228515625,
+    "TotalTime": -1
   }
 }

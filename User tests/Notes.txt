@@ -117,6 +117,11 @@ Sónia:
 - O menu de história precisa de um pouco mais de destaque
 - Não dá para focar nas palavras e no histórico
 
+Amiga do bruno:
+- Tentou usar o clique do rato para selecionar o servidor no server task select
+- O menu de história precisa de um pouco mais de destaque
+
+
 Eduardo 3º Mst Games:
 - Só teclado pelos menus, ou rato para tudo
 - Demorou um ponto a preceber que era para escrever
