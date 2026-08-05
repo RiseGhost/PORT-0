@@ -566,5 +566,37 @@
     ],
     "TimeToDestroyEnemys": 85.33123779296875,
     "TotalTime": -1
+  }, "7OuYnFgOXWZqntmyyQ7CteXZuoC2": {
+    "GameVersion": "0.1.5",
+    "LastConnection": "05/08/2026 17:34:55",
+    "Name": "Sónia",
+    "OperatingSystem": "WindowsPlayer",
+    "ServerWatts": [
+      635,
+      625
+    ],
+    "TimeBuyServer": 211.16000366210938,
+    "TimeByQuest": [
+      {
+        "technology": [
+          "NodeJS"
+        ],
+        "time": 106.43000030517578
+      },
+      {
+        "technology": [
+          "Postfix"
+        ],
+        "time": 99.56999969482422
+      },
+      {
+        "technology": [
+          "MySQL"
+        ],
+        "time": 71.98999786376953
+      }
+    ],
+    "TimeToDestroyEnemys": 112.840576171875,
+    "TotalTime": 1775.59716796875
   }
 }

@@ -112,6 +112,11 @@ Felipa:
 - O menu de história precisa de um pouco mais de destaque
 - Invert scroll commands
 
+Sónia:
+- Tentou usar o TAB para selecionar o servidor no server select
+- O menu de história precisa de um pouco mais de destaque
+- Não dá para focar nas palavras e no histórico
+
 Eduardo 3º Mst Games:
 - Só teclado pelos menus, ou rato para tudo
 - Demorou um ponto a preceber que era para escrever
