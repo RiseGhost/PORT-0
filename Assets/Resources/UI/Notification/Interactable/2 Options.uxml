@@ -5,7 +5,7 @@
             <ui:Label text="Tittle" name="Tittle" style="font-size: 25px; -unity-font-style: bold; color: rgb(219, 219, 219);"/>
             <ui:Label text="Description" name="Description" style="font-size: 20px; -unity-font-style: bold; color: rgba(219, 219, 219, 0.55);"/>
         </ui:VisualElement>
-        <ui:VisualElement name="VisualElement" style="flex-grow: 1; justify-content: center; align-self: center; align-items: center; align-content: flex-start; flex-direction: row; width: 100%;">
+        <ui:VisualElement name="InteractZone" style="flex-grow: 1; justify-content: center; align-self: center; align-items: center; align-content: flex-start; flex-direction: row; width: 100%;">
             <ui:VisualElement style="flex-grow: 1; width: 160px; justify-content: center; align-self: center; align-content: center; align-items: center;">
                 <ui:ProgressBar value="100" name="cancelBar" class="mybar cancel" style="width: 160px; height: 60px; position: relative;"/>
                 <ui:Label text="F" name="CancelKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;"/>
@@ -14,6 +14,9 @@
                 <ui:ProgressBar value="100" name="okBar" class="mybar" style="width: 160px; height: 60px; position: relative;"/>
                 <ui:Label text="F" name="AcceptKey" style="color: rgb(255, 255, 255); font-size: 18px; -unity-font-style: bold; border-right-width: 0; width: 90px; position: absolute; -unity-text-align: upper-center;"/>
             </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="DisableAction" enabled="true" style="flex-grow: 1; justify-content: center; align-self: center; align-items: center; align-content: flex-start; flex-direction: row; width: 100%; position: absolute; bottom: 0; opacity: 1; display: flex; height: 70px;">
+            <ui:Label text="Return to the current game to interact" style="color: rgb(171, 171, 171); -unity-font-style: bold;"/>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

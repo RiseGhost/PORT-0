@@ -12,6 +12,8 @@ public class NotificationOkCancel : NotificationKeyInteractable
     protected ProgressBar Ok;
     protected ProgressBar Cancel;
     private Key OkPress, CancelPress;
+    private VisualElement InteractZone;
+    private VisualElement DisableAction;
     private float speed = 45f;
     
     public NotificationOkCancel(string tittle, string description, Key Ok, Key Cancel, MonoBehaviour monoBehaviour)
@@ -20,6 +22,8 @@ public class NotificationOkCancel : NotificationKeyInteractable
         root = visualTreeAsset.CloneTree();
         this.tittle = tittle;
         this.description = description;
+        DisableAction = root.Q<VisualElement>("DisableAction");
+        InteractZone = root.Q<VisualElement>("InteractZone");
         Tittle = root.Q<Label>("Tittle");
         Description = root.Q<Label>("Description");
         LBOK = root.Q<Label>("AcceptKey");
@@ -34,6 +38,7 @@ public class NotificationOkCancel : NotificationKeyInteractable
         CancelPress = Cancel;
         this.Ok.value = 0f;
         this.Cancel.value = 0f;
+        DisableAction.style.visibility = Visibility.Hidden;
         TTL = 0;
         monoBehaviour.StartCoroutine(Update());
     }
@@ -46,13 +51,20 @@ public class NotificationOkCancel : NotificationKeyInteractable
             foreach (var x in new List<(ProgressBar bar,Key key)>{ (Ok,OkPress), (Cancel,CancelPress) })
             {
                 bool lockTab = false;
+                bool lockInteract = false;
                 List<BtnInstallOS> btns = GameObject.FindObjectsByType<BtnInstallOS>(FindObjectsSortMode.None).ToList();
                 if (btns.Select((x) => x.enabled).Contains(true)) lockTab = true;
                 List<ComputerTabButton> computer = GameObject.FindObjectsByType<ComputerTabButton>(FindObjectsSortMode.None).ToList();
                 if (computer.Select((x) => x.enabled).Contains(true)) lockTab = true;
+                List<ComputerUI> computerUIs = GameObject.FindObjectsByType<ComputerUI>(FindObjectsSortMode.None).ToList();
+                if (computerUIs.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
                 List<Install_OS_UI> installUI = GameObject.FindObjectsByType<Install_OS_UI>(FindObjectsSortMode.None).ToList();
-                if (installUI.Select((x) => x.enabled).Contains(true)) lockTab = true;
+                if (installUI.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
+                List<ServerConfigBook> shop = GameObject.FindObjectsByType<ServerConfigBook>(FindObjectsSortMode.None).ToList();
+                if (shop.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
                 float value = x.bar.value;
+                DisableAction.style.visibility = (lockInteract) ? Visibility.Visible : Visibility.Hidden;
+                InteractZone.style.visibility = (lockInteract) ? Visibility.Hidden : Visibility.Visible;
                 if (Keyboard.current[x.key].isPressed && !lockTab) value += Time.deltaTime * speed;
                 else
                 {
