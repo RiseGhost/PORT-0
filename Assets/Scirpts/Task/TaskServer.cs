@@ -54,6 +54,10 @@ public class TaskServer
             return;
         }
         try{
+            ServerTaskSelect[] serverTaskSelect = GameObject.FindObjectsByType<ServerTaskSelect>(FindObjectsSortMode.None).ToArray();
+            if (serverTaskSelect.Select((x) => x.enabled).Contains(true)) return;
+            PopUpTask[] popUpTasks = GameObject.FindObjectsByType<PopUpTask>(FindObjectsSortMode.None).ToArray();
+            if (popUpTasks.Select((x) => x.enabled).Contains(true)) return;
             GameObject[] serversGameObjects = GameObject.FindGameObjectsWithTag("ServerGameObject");
             if (serversGameObjects == null)
             {
@@ -80,6 +84,7 @@ public class TaskServer
                 UnityEngine.Debug.Log("TaskServer: Exist Install_OS_UI in the scene, not launching");
                 return;
             }
+            if (NotificationServer.CurrentTopNotification() != null) return;
             Task[] data     = Resources.Load<TaskTableObject>("Task/TaskTable").getTasks();
             Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).Select(x => x.clone()).ToArray();
             if (tasks.Length == 0) UnityEngine.Debug.Log("TaskServer: Don't exist Tasks to Launch");

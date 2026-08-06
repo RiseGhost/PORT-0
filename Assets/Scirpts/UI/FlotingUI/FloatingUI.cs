@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,6 +52,12 @@ public class FloatingUI : MonoBehaviour, FloatingUIInterface
 
     public void show()
     {
+        ServerTaskSelect[] serverTaskSelects = GameObject.FindObjectsByType<ServerTaskSelect>(FindObjectsSortMode.None);
+        if (serverTaskSelects.Select((x) => x.enabled).Contains(true))
+        {
+            hide();
+            return;
+        }
         Entry = true;
         if (UI != null)
         {

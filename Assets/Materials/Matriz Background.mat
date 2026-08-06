@@ -52,7 +52,7 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     m_Colors:
-    - _Circle_Pos: {r: 0.83907783, g: 0.21221179, b: 0, a: 0}
+    - _Circle_Pos: {r: 0.03872954, g: 1.1241199, b: 0, a: 0}
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
   m_BuildTextureStacks: []

@@ -62,6 +62,8 @@ public class NotificationOkCancel : NotificationKeyInteractable
                 if (installUI.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
                 List<ServerConfigBook> shop = GameObject.FindObjectsByType<ServerConfigBook>(FindObjectsSortMode.None).ToList();
                 if (shop.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
+                List<ServerTaskSelect> serverTaskSelects = GameObject.FindObjectsByType<ServerTaskSelect>(FindObjectsSortMode.None).ToList();
+                if (serverTaskSelects.Select((x) => x.enabled).Contains(true)) { lockTab = true; lockInteract = true; }
                 float value = x.bar.value;
                 DisableAction.style.visibility = (lockInteract) ? Visibility.Visible : Visibility.Hidden;
                 InteractZone.style.visibility = (lockInteract) ? Visibility.Hidden : Visibility.Visible;
