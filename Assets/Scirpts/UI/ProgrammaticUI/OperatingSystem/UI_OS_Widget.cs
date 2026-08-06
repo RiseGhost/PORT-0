@@ -12,7 +12,7 @@ public class UI_OS_Widget : ToggleWidget<OperatingSystemStatus>
 
     public void setStatus(OperatingSystemStatus status)
     {
-        if (label != null)  label.text = status.GetValue().DisplayName;
+        if (label != null)  label.text = status.GetValue().DisplayName + " | Linux";
         if (icon != null)   icon.texture = status.GetValue().icon;
         data = status;
     }

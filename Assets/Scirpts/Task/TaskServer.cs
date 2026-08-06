@@ -7,7 +7,7 @@ using UnityEngine;
 public class TaskServer
 {
     private static bool _lock = false;
-    private static short TotalTask = 0;
+    public static short TotalTask = 0;
     public static bool Lock
     {
         get => _lock;
@@ -84,7 +84,11 @@ public class TaskServer
                 UnityEngine.Debug.Log("TaskServer: Exist Install_OS_UI in the scene, not launching");
                 return;
             }
-            if (NotificationServer.CurrentTopNotification() != null) return;
+            if (NotificationServer.CurrentTopNotification() != null)
+            {
+                UnityEngine.Debug.Log("TaskServer: Já existe uma notificação, logo cancel esta");
+                return;
+            }
             Task[] data     = Resources.Load<TaskTableObject>("Task/TaskTable").getTasks();
             Task[] tasks    = data.Where(x => x.getDifficulty() == difficulty).Select(x => x.clone()).ToArray();
             if (tasks.Length == 0) UnityEngine.Debug.Log("TaskServer: Don't exist Tasks to Launch");
@@ -92,7 +96,6 @@ public class TaskServer
             Task selectTask = tasks[randomIndex];
             if (TotalTask == 1) selectTask.IncrementSpace(GameObject.FindFirstObjectByType<ServerGameObject>().server.getAvailableSpace() - selectTask.getSpace());
             Last_Notification = selectTask.Launch(anchor);
-            TotalTask++;
         } catch (Exception e){}
     }
 

@@ -52,6 +52,7 @@ public class PopUpTask : MonoBehaviour
                 ServerTaskSelect taskSelect = Instantiate(serverTaskSelect,Vector3.zero,Quaternion.identity);
                 taskSelect.setTask(task);
             }
+            TaskServer.TotalTask++;
             Destroy(this.gameObject);
         }
         else if (SliderCancel.value >= 100f)
